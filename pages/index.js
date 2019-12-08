@@ -1,16 +1,17 @@
 import React from 'react'
-import { Theme } from '../components/Theme'
-import { Flex, Text } from 'rebass'
+import { Theme } from '../theme/theme'
+import { Meta } from '../components/Meta'
+import {
+  Intro,
+  Links,
+} from '../components/index'
 
 const App = props => {
   return (
     <Theme>
-      
-      <Flex width='100vw' height='100vh' variant='flexes.ccc'>
-        <Text variant='title'>Freemia School</Text>
-        <Text variant='title'>Family Education</Text>
-      </Flex>
-      
+      <Meta/>
+      <Intro/>
+      <Links/>
     </Theme>
     )
 }
