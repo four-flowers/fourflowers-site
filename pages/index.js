@@ -4,6 +4,7 @@ import { Meta } from '../components/Meta'
 import {
   Intro,
   Links,
+  For,
 } from '../components/index'
 
 const App = props => {
@@ -12,6 +13,7 @@ const App = props => {
       <Meta/>
       <Intro/>
       <Links/>
+      <For/>
     </Theme>
     )
 }

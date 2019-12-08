@@ -1,6 +1,7 @@
 import Intro from './Intro'
 import Links from './Links'
-// import For from './For'
+import Heading from './Heading'
+import For from './For'
 // import How from './How'
 // import Pillars from './Pillars'
 // import Mission from './Mission'
@@ -8,4 +9,6 @@ import Links from './Links'
 export {
 	Intro,
 	Links,
+	Heading,
+	For,
 }

@@ -9,7 +9,7 @@ breakpoints.sm = breakpoints[1]
 breakpoints.md = breakpoints[2]
 breakpoints.lg = breakpoints[3]
 
-const space = [0, 8, 16, 32, 48, 96, 128, 256]
+const space = [0, 8, 16, 32, 48, 64, 96, 128, 256]
 
 const colors = {
 	transparent: 'rgba(0,0,0,0.0)',
@@ -36,7 +36,7 @@ const text = {
 	},
 	heading: {
 		fontSize: ['1.75rem', '3rem'],
-		lineHeight: 3.25,
+		lineHeight: 1.25,
 		fontFamily: 'sans',
 		letterSpacing: ['.02em', null, '.04em'],
 	},
