@@ -71,4 +71,10 @@ export default {
 		alignItems: 'flex-start',
 		flexWrap: 'wrap',
 	},
+	cec: {
+		flexDirection: 'column',
+		justifyContent: 'flex-end',
+		alignItems: 'center',
+		flexWrap: 'wrap',
+	},
 }

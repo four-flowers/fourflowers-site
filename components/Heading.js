@@ -1,20 +1,46 @@
 import React from 'react'
 import { Flex, Text } from 'rebass'
 
+// const Heading = props => {
+// 	return (
+// 		<Flex py={3} px={3} bg={props.bg} width='100%' variant='flexes.ccc' sx={{position: 'relative'}}>
+// 			<Text variant='heading'
+// 				sx={{
+// 					position: 'absolute',
+// 					top: '50%',
+// 					mt: '-50%',
+// 					left: 0,
+// 					color: 'transparent',
+// 					'-webkit-text-stroke-width': '1px',
+// 					'-webkit-text-stroke-color': `${props.color}`,
+// 				}}
+// 			>●</Text>
+// 			<Text color={props.color} variant='heading'>{props.children}</Text>
+// 		
+// 		</Flex>
+// 		)
+// }
+
+
 const Heading = props => {
 	return (
 		<Flex py={3} px={3} bg={props.bg} width='100%' variant='flexes.ccc' sx={{position: 'relative'}}>
-			<Text variant='heading'
+			<Text
+				color={props.color} variant='heading'
 				sx={{
-					position: 'absolute',
-					top: 0,
-					left: 0,
-					// color: 'transparent',
-					borderColor: 'props.color',
-					border: '1px solid',
+					':before': {
+						content: `'●'`,
+						position: 'absolute',
+						left: 4,
+						color: 'transparent',
+						'-webkit-text-stroke-width': '1px',
+						'-webkit-text-stroke-color': `${props.color}`,
+					}
 				}}
-			>●</Text>
-			<Text variant='heading'>{props.children}</Text>
+
+			>
+				{props.children}
+			</Text>
 		
 		</Flex>
 		)
