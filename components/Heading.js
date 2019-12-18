@@ -24,9 +24,16 @@ import { Flex, Text } from 'rebass'
 
 const Heading = props => {
 	return (
-		<Flex py={3} px={3} bg={props.bg} width='100%' variant='flexes.ccc' sx={{position: 'relative'}}>
+		<Flex
+			py={3} px={3} bg={props.bg} width='100%' variant='flexes.ccc'
+			sx={{
+				position: 'relative',
+				borderBottom: '1px solid',
+				borderColor: `${props.borderColor}`,
+			}}
+		>
 			<Text
-				color={props.color} variant='heading'
+				variant='heading'
 				sx={{
 					':before': {
 						content: `'●'`,
@@ -47,3 +54,7 @@ const Heading = props => {
 }
 
 export default Heading
+
+Heading.defaultProps = {
+	borderColor: 'transparent'
+}

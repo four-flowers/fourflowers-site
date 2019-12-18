@@ -5,6 +5,8 @@ import {
   Intro,
   Links,
   For,
+  How,
+  Pillars,
   Mission,
 } from '../components/index'
 
@@ -15,6 +17,8 @@ const App = props => {
       <Intro/>
       <Links/>
       <For/>
+      <How/>
+      <Pillars/>
       <Mission/>
     </Theme>
     )

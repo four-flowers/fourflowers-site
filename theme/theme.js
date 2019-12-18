@@ -12,7 +12,7 @@ breakpoints.lg = breakpoints[3]
 const space = [0, 8, 16, 32, 48, 64, 96, 128, 256]
 
 const colors = {
-	transparent: 'rgba(0,0,0,0.0)',
+	transparent: 'rgba(0,0,0,.0)',
 	black: '#000',
 	white: '#FFF',
 	orange: '#FB4926',
@@ -20,6 +20,7 @@ const colors = {
 	blue: '#0F72B9',
 	brown: '#CB996F',
 	yellow: '#FEDA31',
+	border: 'rgba(0,0,0,.16)',
 }
 
 const fonts = {
