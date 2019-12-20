@@ -20,7 +20,7 @@ const colors = {
 	blue: '#0F72B9',
 	brown: '#CB996F',
 	yellow: '#FEDA31',
-	border: 'rgba(0,0,0,.16)',
+	border: 'rgba(0,0,0,.08)',
 }
 
 const fonts = {

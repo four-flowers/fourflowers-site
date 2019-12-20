@@ -8,15 +8,21 @@ const Pillars = props => {
 		<Flex bg='grey' color='blue' variant='flexes.css'>
 			<Heading borderColor='border'>Three pillars</Heading>
 
-			<Pillar>
-				<Title>
-					<Text variant='heading'>To be</Text>
-					<Text variant='body' pt={3}>Know yourself better</Text>
-				</Title>
-				<Flex variant='flexes.css'>
-					<Paragraph>Description text goes here</Paragraph>
-				</Flex>
-			</Pillar>
+			<Pillar
+				heading='To be'
+				subheading='Know yourself better'
+				paragraph='Description text goes here'
+			/>
+			<Pillar
+				heading='To know'
+				subheading='Understand how world works'
+				paragraph='Description text goes here'
+			/>
+			<Pillar
+				heading='To do'
+				subheading='Develop practical skills'
+				paragraph='Description text goes here'
+			/>
 
 		</Flex>
 		)
