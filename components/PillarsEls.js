@@ -1,35 +1,50 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import { Flex, Text } from 'rebass'
 
 
 export const Pillar = props => {
-	const [open, setOpen] = useState(false)
+	
+	const [setActive, setActiveState] = useState('')
+	const [setHeight, setHeightState] = useState('0px')
+	const [setOpacity, setOpacityState] = useState(0)
+	const [setToggle, setToggleState] = useState('"+"')
+
+	const content = useRef(null)
+
+	const toggleItem = () => {
+		setActiveState(setActive === '' ? 'active' : '')
+		setHeightState(setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`)
+		setOpacityState(setActive === 'active' ? 0 : 1)
+		setToggleState(setActive === 'active' ? '"+"' : '"–"')
+	}
 	
 	return (
 		<Flex
-			as='details' width='100%' py={7} px={3} variant='flexes.css'
+			width='100%' py={7} px={3} variant='flexes.css'
 			sx={{
 				borderBottom: '1px solid',
 				borderColor: 'border',
 			}}
-			onClick={() => setOpen(!open)} open={open}
 		>
 			
-			<Flex as='summary' variant='flexes.css'
+			<Flex
+				width='100%' variant='flexes.css'
 				sx={{
 					'::-webkit-details-marker': {display: 'none'},
 					'cursor': 'pointer',
 				}}
+				onClick={toggleItem}
 			>
 
-				<Text variant='heading'
+				<Text
+					variant='heading'
 					sx={{
 						':after': {
-							content: `'+'`,
+							content: setToggle,
 							right: 3,
 							position: 'absolute',
 						}
-						}}
+					}}
 				>
 				 {props.heading}
 				</Text>
@@ -37,12 +52,20 @@ export const Pillar = props => {
 
 			</Flex>
 			
-				<Flex variant='flexes.css'>
+				<Flex
+					variant='flexes.css'
+					ref={content}
+					sx={{
+							overflow: 'hidden',
+							maxHeight: setHeight,
+							transition: 'max-height .5s ease',
+						}}
+				>
 					<Text variant='body' pt={3}
 						sx={{
-							transition: 'all .5s ease',
-							opacity: open ? 0 : 1,
-						}}
+							opacity: setOpacity,
+							transition: 'opacity .5s ease .25s',
+							}}
 					>
 						{props.paragraph}
 					</Text>
