@@ -18,8 +18,12 @@ export const IconFind = props => {
 					position: 'absolute',
 					left: '40px',
 					top: '40px',
-					transform: 'rotate(360deg)',
-					transition: 'all 3s ease',
+					animation: 'rotate 40s infinite linear',
+					'@keyframes rotate': {
+						from:
+							{transform: 'rotate(0deg)'},
+						to: {transform: 'rotate(360deg)'},
+					}
 				}}
 			>
 				<Flex
