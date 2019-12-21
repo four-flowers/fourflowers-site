@@ -14,7 +14,12 @@ const space = [0, 8, 16, 32, 48, 64, 96, 128, 256]
 const colors = {
 	transparent: 'rgba(0,0,0,.0)',
 	black: '#000',
-	blacks: ['rgba(0,0,0,.16)', 'rgba(0,0,0,.08)'],
+	blacks: [
+		'rgba(0,0,0,.08)',
+		'rgba(0,0,0,.16)',
+		'rgba(0,0,0,.32)',
+		'rgba(0,0,0,.64)',
+		],
 	white: '#FFF',
 	orange: '#FB4926',
 	grey: '#F9FAFC',
@@ -31,7 +36,7 @@ const fonts = {
 
 const text = {
 	title: {
-		fontSize: ['2rem', null, '7rem'],
+		fontSize: ['2rem', null, '5rem'],
 		lineHeight: 1.2,
 		fontFamily: 'sans',
 		letterSpacing: ['.02em', null, '.04em'],
