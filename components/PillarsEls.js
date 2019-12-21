@@ -67,7 +67,7 @@ export const Pillar = props => {
 							transition: 'max-height .5s ease',
 						}}
 				>
-					<Text as='p' variant='desc' py={3}
+					<Text as='p' width={2/3} variant='desc' py={3}
 						sx={{
 							opacity: setOpacity,
 							transition: setTransition,

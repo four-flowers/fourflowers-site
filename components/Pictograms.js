@@ -19,11 +19,12 @@ export const IconFind = props => {
 					left: '40px',
 					top: '40px',
 					animation: 'rotate 40s infinite linear',
+					// 'animation-play-state': 'paused',
 					'@keyframes rotate': {
-						from:
-							{transform: 'rotate(0deg)'},
-						to: {transform: 'rotate(360deg)'},
-					}
+						from: { transform: 'rotate(0deg)' },
+						to: { transform: 'rotate(360deg)' },
+					},
+					// ':hover': {'animation-play-state': 'running',}
 				}}
 			>
 				<Flex
