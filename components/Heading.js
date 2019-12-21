@@ -1,27 +1,6 @@
 import React from 'react'
 import { Flex, Text } from 'rebass'
 
-// const Heading = props => {
-// 	return (
-// 		<Flex py={3} px={3} bg={props.bg} width='100%' variant='flexes.ccc' sx={{position: 'relative'}}>
-// 			<Text variant='heading'
-// 				sx={{
-// 					position: 'absolute',
-// 					top: '50%',
-// 					mt: '-50%',
-// 					left: 0,
-// 					color: 'transparent',
-// 					'-webkit-text-stroke-width': '1px',
-// 					'-webkit-text-stroke-color': `${props.color}`,
-// 				}}
-// 			>●</Text>
-// 			<Text color={props.color} variant='heading'>{props.children}</Text>
-// 		
-// 		</Flex>
-// 		)
-// }
-
-
 const Heading = props => {
 	return (
 		<Flex
@@ -33,6 +12,7 @@ const Heading = props => {
 			}}
 		>
 			<Text
+				as='h2'
 				variant='heading'
 				sx={{
 					':before': {

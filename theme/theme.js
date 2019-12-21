@@ -14,6 +14,7 @@ const space = [0, 8, 16, 32, 48, 64, 96, 128, 256]
 const colors = {
 	transparent: 'rgba(0,0,0,.0)',
 	black: '#000',
+	blacks: ['rgba(0,0,0,.16)', 'rgba(0,0,0,.08)'],
 	white: '#FFF',
 	orange: '#FB4926',
 	grey: '#F9FAFC',

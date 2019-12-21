@@ -4,7 +4,7 @@ import { Heading } from './index'
 
 const Mission = props => {
 	return (
-		<Flex height='100vh' variant='flexes.css' bg='yellow'>
+		<Flex as='section' height='100vh' variant='flexes.css' bg='yellow'>
 			<Heading color='black'>Mission</Heading>
 			<Flex flexGrow='1' px={3} variant='flexes.cec' color='black'>
 				<Text variant='body' pb={3} >We believe text, something about equal oportunities for free education, for everyone. We believe we can do better. Learn more about our mission.</Text>

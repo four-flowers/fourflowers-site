@@ -7,12 +7,12 @@ const Links = props => {
 		<Layout bg='grey' py={4} variant='flexes.rse'>
 
 			<Grid gridColumn={'1/ span 6'}>
-				<Text variant='desc'>A personalised learning resource for self-directed learners.</Text>
+				<Text variant='desc'>A personalised learning resource for<br/>self-directed learners.</Text>
 			</Grid>
 			<Grid gridColumn={'7/ span 6'}>
-				<Flex variant='flexes.rbc'>
-					<Text variant='desc'>Mission</Text>
-					<Text variant='desc'>Contact us</Text>
+				<Flex variant='flexes.rss'>
+					<Text pr={5} variant='desc'>Mission</Text>
+					<Text pr={5} variant='desc'>Contact us</Text>
 					<Text variant='desc'>Subscribe</Text>
 				</Flex>
 			</Grid>

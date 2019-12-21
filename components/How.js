@@ -11,7 +11,7 @@ const Cell = ({children}) => {
 			px={3}
 			sx={{
 				borderRight: '1px solid',
-				borderColor: 'border',
+				borderColor: 'blacks.0',
 				':last-child': {border: 'none'},
 			}}
 		>
@@ -22,19 +22,21 @@ const Cell = ({children}) => {
 
 const How = props => {
 	return (
-		<Flex flexWrap='nowrap' bg='brown' color='grey' py={7} variant='flexes.rbe'>
+		<Flex as='section' flexWrap='nowrap' bg='brown' color='grey' py={7} variant='flexes.rbe'>
 			<Cell>
-				<Text variant='heading'>Find</Text>
-				<Text variant='desc'>a teacher or become one</Text>
-				<IconFind size={'332px'} pt={8} />
+				<Flex as='header' pb={8} variant='flexes.ccs'>
+					<Text as='h2' variant='heading'>Find</Text>
+					<Text variant='desc'>a teacher or become one</Text>
+				</Flex>
+				<IconFind size={'332px'} />
 			</Cell>
 			<Cell>
-				<Text variant='heading'>Create</Text>
+				<Text as='h2' variant='heading'>Create</Text>
 				<Text variant='desc'>your own courses</Text>
 				<IconCreate size={'332px'} pt={8} />
 			</Cell>
 			<Cell>
-				<Text variant='heading'>Connect</Text>
+				<Text as='h2' variant='heading'>Connect</Text>
 				<Text variant='desc'>with students around you</Text>
 				<IconConnect size={'332px'} pt={8} />
 			</Cell>

@@ -7,27 +7,32 @@ export const Pillar = props => {
 	const [setActive, setActiveState] = useState('')
 	const [setHeight, setHeightState] = useState('0px')
 	const [setOpacity, setOpacityState] = useState(0)
+	const [setTransition, setTransitionState] = useState('opacity .2s ease')
 	const [setToggle, setToggleState] = useState('"+"')
 
-	const content = useRef(null)
+	const paragraph = useRef(null)
 
 	const toggleItem = () => {
 		setActiveState(setActive === '' ? 'active' : '')
-		setHeightState(setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`)
+		setHeightState(setActive === 'active' ? '0px' : `${paragraph.current.scrollHeight}px`)
 		setOpacityState(setActive === 'active' ? 0 : 1)
+		setTransitionState(setActive === 'active' ? 'opacity .2s ease' : 'opacity .5s ease .25s')
 		setToggleState(setActive === 'active' ? '"+"' : '"–"')
 	}
 	
 	return (
 		<Flex
+			as='section'
 			width='100%' py={7} px={3} variant='flexes.css'
 			sx={{
 				borderBottom: '1px solid',
 				borderColor: 'border',
+				':last-child': {borderColor: 'transparent'},
 			}}
 		>
 			
 			<Flex
+				as='header'
 				width='100%' variant='flexes.css'
 				sx={{
 					'::-webkit-details-marker': {display: 'none'},
@@ -37,6 +42,7 @@ export const Pillar = props => {
 			>
 
 				<Text
+					as='h3'
 					variant='heading'
 					sx={{
 						':after': {
@@ -54,17 +60,17 @@ export const Pillar = props => {
 			
 				<Flex
 					variant='flexes.css'
-					ref={content}
+					ref={paragraph}
 					sx={{
 							overflow: 'hidden',
 							maxHeight: setHeight,
 							transition: 'max-height .5s ease',
 						}}
 				>
-					<Text variant='body' pt={3}
+					<Text as='p' variant='desc' py={3}
 						sx={{
 							opacity: setOpacity,
-							transition: 'opacity .5s ease .25s',
+							transition: setTransition,
 							}}
 					>
 						{props.paragraph}

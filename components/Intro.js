@@ -3,7 +3,7 @@ import { Box, Flex, Text } from 'rebass'
 
 const Intro = props => {
 	return (
-		<Flex variant='flexes.ccc' height='100vh'>
+		<Flex as='header' variant='flexes.ccc' height='100vh'>
 			<Flex
 				width='200px' height='200px'
 				mb={3}
@@ -14,8 +14,7 @@ const Intro = props => {
 
 				}}
 			/>
-			<Text variant='title'>Freemia School</Text>
-			<Text variant='title'>Family Education</Text>
+			<Text as='h1' textAlign='center' variant='title'>Freemia School <br/>Family Education</Text>
 		</Flex>
 		)
 }
