@@ -14,8 +14,8 @@ const Cell = props => {
 			{...props}
 			color='grey'
 			sx={{
-				borderRight: '1px dashed',
-				borderColor: 'grey',
+				borderRight: '1px solid',
+				borderColor: 'blacks.1',
 				':last-child': {border: 'none'},
 			}}
 		>

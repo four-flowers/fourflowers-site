@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box, Flex, Text } from 'rebass'
-import { Links } from './index'
+import { Flex, Text } from 'rebass'
+import { Logo, Links } from './bridge'
 
 const Intro = props => {
 	return (
@@ -10,16 +10,7 @@ const Intro = props => {
 			variant='flexes.cbc'
 		>
 			<Flex as='header' variant='flexes.ccc' flexGrow='1'>
-				<Flex
-					width='200px' height='200px'
-					mb={3}
-					sx={{
-						borderRadius: '999px',
-						border: '1px solid',
-						borderColor: 'orange',
-
-					}}
-				/>
+				<Logo/>
 				<Text
 					as='h1'
 					textAlign='center'
@@ -28,7 +19,9 @@ const Intro = props => {
 					Freemia School <br/>Family Education
 				</Text>
 			</Flex>
+
 			<Links/>
+			
 		</Flex>
 		)
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex, Text } from 'rebass'
-import { Heading } from './index'
+import { Heading } from './bridge'
 import { Pillar, Title, Paragraph } from './PillarsEls'
 
 const Pillars = props => {

@@ -8,7 +8,7 @@ import {
   How,
   Pillars,
   Mission,
-} from '../components/index'
+} from '../components/bridge'
 
 const App = props => {
   return (

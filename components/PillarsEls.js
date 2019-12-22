@@ -30,7 +30,7 @@ export const Pillar = props => {
 			variant='flexes.css'
 			sx={{
 				border: '1px dashed',
-				borderColor: 'blacks.2',
+				borderColor: 'blue',
 			}}
 		>
 			
