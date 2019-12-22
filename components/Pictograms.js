@@ -1,57 +1,77 @@
+/** @jsx jsx */
 import React from 'react'
 import { Flex } from 'rebass'
+import { jsx } from '@emotion/core'
 
 export const IconFind = props => {
 	return (
-		<Flex
-			pb={5} pt={5}
-			sx={{
-				width: '-webkit-fill-available',
-				maxWidth: '332px',
-				minHeight: '332px',
-				position: 'relative',
-			}}
-		>
-			<Flex
-				sx={{
-					width: '252px',
-					height: '252px',
-					position: 'absolute',
-					left: '40px',
-					top: '40px',
-					animation: 'rotate 40s infinite linear',
-					// 'animation-play-state': 'paused',
-					'@keyframes rotate': {
-						from: { transform: 'rotate(0deg)' },
-						to: { transform: 'rotate(360deg)' },
-					},
-					// ':hover': {'animation-play-state': 'running',}
-				}}
-			>
+		<Flex py={5} sx={{ position: 'relative' }}>
 				<Flex
 					sx={{
-						width: '-webkit-fill-available',
-						maxWidth: '130px',
-						maxHeight: '130px',
-						postition: 'absolute',
-						borderRadius: '999px',
-						border: '1px solid white',
-						background:
-							'radial-gradient(87.17% 87.17% at 50% 50%, rgba(255, 255, 255, 0.16) 0%, #FFFFFF 100%)',
-					}}
+						m: 'auto',
+						width: '100px',
+						height: '100px',
+						position: 'absolute',
+						top: 0,
+						right: 0,
+						bottom: 0,
+						left: 0,
+						animation: 'rotate 40s infinite linear',
+						'@keyframes rotate': {
+							from: {transform: 'rotate(0deg)'},
+							to: {transform: 'rotate(360deg)'},
+						},
+						':before': {
+							content: `""`,
+							top: 0,
+							left: 0,
+							transform: 'translate(-80%, 0)',
+							width: '100px',
+							height: '100px',
+							borderRadius: '999px',
+							border: '1px solid white',
+							background: 'radial-gradient(87.17% 87.17% at 50% 50%, rgba(255, 255, 255, 0.16) 0%, #FFFFFF 100%)',
+						}
+						}}
 				/>
-			</Flex>
-			<Flex
-				sx={{
-					width: '332px',
-					height: '332px',
-					postition: 'absolute',
-					borderRadius: '999px',
-					border: '1px solid white',
-					background:
-						'radial-gradient(87.17% 87.17% at 50% 50%, rgba(255, 255, 255, 0.16) 0%, #FFFFFF 100%)',
-				}}
-			/>
+
+			<svg
+				width="100%"
+				height="100%"
+				viewBox="0 0 332 332"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M331.5 166C331.5 257.403 257.403 331.5 166 331.5C74.5969 331.5 0.5 257.403 0.5 166C0.5 74.5969 74.5969 0.5 166 0.5C257.403 0.5 331.5 74.5969 331.5 166Z"
+					fill="url(#paint0_radial)"
+					stroke="white"
+				/>
+				<defs>
+					<radialGradient
+						id="paint0_radial"
+						cx="0"
+						cy="0"
+						r="1"
+						gradientUnits="userSpaceOnUse"
+						gradientTransform="translate(166 166) rotate(90) scale(289.398)"
+					>
+						<stop stopColor="white" stopOpacity="0.16" />
+						<stop offset="1" stopColor="white" />
+					</radialGradient>
+					<radialGradient
+						id="paint1_radial"
+						cx="0"
+						cy="0"
+						r="1"
+						gradientUnits="userSpaceOnUse"
+						gradientTransform="translate(112.906 112.906) rotate(90) scale(120.128)"
+					>
+						<stop stopColor="white" stopOpacity="0.16" />
+						<stop offset="1" stopColor="white" />
+					</radialGradient>
+				</defs>
+			</svg>
 		</Flex>
 	)
 }
@@ -60,8 +80,8 @@ export const IconCreate = props => {
 	return (
 		<Flex pb={5} pt={5}>
 			<svg
-				width={props.size}
-				height={props.size}
+				width="100%"
+				height="100%"
 				viewBox="0 0 332 332"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
@@ -93,8 +113,8 @@ export const IconConnect = props => {
 	return (
 		<Flex pb={5} pt={5}>
 			<svg
-				width={props.size}
-				height={props.size}
+				width="100%"
+				height="100%"
 				viewBox="0 0 332 332"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"

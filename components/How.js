@@ -42,7 +42,7 @@ const How = props => {
 				<Text variant='desc'>a teacher or become one</Text>
 			</Cell>
 			<Cell column={1} row={2}>
-				<IconFind size={'332px'} />
+				<IconFind />
 			</Cell>
 
 			<Cell column={2} row={1} pt={7}>
@@ -50,7 +50,7 @@ const How = props => {
 				<Text variant='desc'>your own courses</Text>
 			</Cell>
 			<Cell column={2} row={2}>
-				<IconCreate size={'332px'} />
+				<IconCreate />
 			</Cell>
 
 			<Cell column={3} row={1} pt={7}>
@@ -58,7 +58,7 @@ const How = props => {
 				<Text variant='desc'>with students around you</Text>
 			</Cell>
 			<Cell column={3} row={2}>
-				<IconConnect size={'332px'} pb={5} />
+				<IconConnect pb={5} />
 			</Cell>
 
 		</Layout>

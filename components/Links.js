@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box, Flex, Text, Link as SysLink } from 'rebass'
+import { Box, Flex, Text, Link } from 'rebass'
 import { Layout, Grid } from './Layout'
-import Link from 'next/link'
+import NextLink from 'next/link'
 
 const Links = props => {
 	return (
@@ -19,13 +19,13 @@ const Links = props => {
 		>
 
 			<Grid gridColumn={'1'}>
-				<Text variant='desc'>A personalised learning resource<br/>for self-directed learners.</Text>
+				<Text variant='desc'>A personalised learning resource for self-directed learners.</Text>
 			</Grid>
 			<Grid gridColumn={'2'}>
 				<Flex variant='flexes.rss' variant='text.desc'>
-					<Link><SysLink href='#' pr={5}>Mission</SysLink></Link>
-					<Link><SysLink href='mailto:mmarypo@gmail.com' pr={5}>Contact us</SysLink></Link>
-					<Link><SysLink href='./test'>Subscribe</SysLink></Link>
+					<Link href='#' pr={5}>Mission</Link>
+					<Link href='mailto:mmarypo@gmail.com' pr={5}>Contact</Link>
+					<Link href='./test' pr={5}>Subscribe</Link>
 				</Flex>
 			</Grid>
 

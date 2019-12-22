@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text, Link as RebassLink } from 'rebass'
+import { Box, Text } from 'rebass'
 import { grid } from 'styled-system'
 import styled from '@emotion/styled'
 
@@ -25,10 +25,4 @@ Layout.defaultProps = {
 	gridTemplateRows: 1,
 	gridColumnGap: 1,
 	px: 3,
-}
-
-export const Link = props => {
-	return (
-			<NextLink href={props.href}>{props.children}</NextLink>
-		)
 }
