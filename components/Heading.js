@@ -24,8 +24,8 @@ const Heading = props => {
 						position: 'absolute',
 						left: 4,
 						color: 'transparent',
-						'-webkit-text-stroke-width': '1px',
-						'-webkit-text-stroke-color': `${props.color}`,
+						'WebkitTextStrokeWidth': '1px',
+						'WebkitTextStrokeColor': `${props.color}`,
 					}
 				}}
 
