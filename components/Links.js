@@ -1,11 +1,10 @@
 import React from 'react'
 import { Box, Flex, Text } from 'rebass'
-import { Layout, Grid } from './Layout'
+import { Layout, Grid, Link } from './Layout'
 
 const Links = props => {
 	return (
 		<Layout
-			// mx={3}
 			py={5}
 			px={3}
 			width='-webkit-fill-available'
@@ -22,10 +21,10 @@ const Links = props => {
 				<Text variant='desc'>A personalised learning resource<br/>for self-directed learners.</Text>
 			</Grid>
 			<Grid gridColumn={'2'}>
-				<Flex variant='flexes.rss'>
-					<Text pr={5} variant='desc'>Mission</Text>
-					<Text pr={5} variant='desc'>Contact us</Text>
-					<Text variant='desc'>Subscribe</Text>
+				<Flex variant='flexes.rss' variant='text.desc'>
+					<Link pr={5}>Mission</Link>
+					<Link pr={5}>Contact us</Link>
+					<Link>Subscribe</Link>
 				</Flex>
 			</Grid>
 

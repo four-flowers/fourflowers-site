@@ -32,7 +32,6 @@ export const TopRight = props => {
 	return (
 		<Flex
 			sx={{
-				position: 'absolute',
 				width: '100%',
 				height: '100%',
 				top: 0,
@@ -60,7 +59,6 @@ export const RightBottom = props => {
 	return (
 		<Flex
 			sx={{
-				position: 'absolute',
 				width: '100%',
 				height: '100%',
 				top: 0,
@@ -88,7 +86,6 @@ export const BottomLeft = props => {
 	return (
 		<Flex
 			sx={{
-				position: 'absolute',
 				width: '100%',
 				height: '100%',
 				top: 0,
@@ -116,7 +113,6 @@ export const TopLeft = props => {
 	return (
 		<Flex
 			sx={{
-				position: 'absolute',
 				width: '100%',
 				height: '100%',
 				top: 0,

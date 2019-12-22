@@ -12,10 +12,54 @@ const Logo = props => {
 				height: '216px',
 				}}
 		>
-			<TopLeft opacity={.4} />
-			<TopRight opacity={.4} />
-			<BottomLeft opacity={.4} />
-			<RightBottom opacity={.4} />
+			<TopLeft
+				sx={{
+					animation: 'fade 16s infinite',
+					position: 'absolute',
+					'@keyframes fade': {
+						from: {opacity: 0},
+						'52%': {opacity: 1},
+						'60%': {opacity: 0},
+						to: {opacity: 0},
+					}
+				}}
+			/>
+			<TopRight
+				sx={{
+					position: 'absolute',
+					animation: 'fade 16s infinite 4s',
+					'@keyframes fade': {
+						from: {opacity: 0},
+						'52%': {opacity: 1},
+						'60%': {opacity: 0},
+						to: {opacity: 0},
+					}
+				}}
+			/>
+			<RightBottom
+				sx={{
+					position: 'absolute',
+					animation: 'fade 16s infinite 8s',
+					'@keyframes fade': {
+						from: {opacity: 0},
+						'52%': {opacity: 1},
+						'60%': {opacity: 0},
+						to: {opacity: 0},
+					}
+				}}
+			/>
+			<BottomLeft
+				sx={{
+					position: 'absolute',
+					animation: 'fade 16s infinite 12s',
+					'@keyframes fade': {
+						from: {opacity: 0},
+						'52%': {opacity: 1},
+						'60%': {opacity: 0},
+						to: {opacity: 0},
+					}
+				}}
+			/>
 			<Base/>
 		</Flex>
 		)

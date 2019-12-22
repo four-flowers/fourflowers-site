@@ -111,6 +111,8 @@ const Global = injectGlobal`
 
 	a {
 		text-decoration: none;
+		font-size: inherit;
+		font-family: inherit;
 		border-bottom: 1px solid ${colors.transparent};
 		color: inherit;
 		cursor: pointer;
