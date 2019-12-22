@@ -12,10 +12,17 @@ export const Layout = props => {
 	return (
 		<Grid
 			{...props}
-			// width={'100%'}
-			gridTemplateColumns={'repeat(12, 1fr)'}
-			gridColumnGap={1}
-			px={4}
+			gridTemplateColumns={props.columns}
+			gridTemplateRows={props.rows}
+			gridColumnGap={props.gap}
+			px={props.px}
 		/>
 	)
+}
+
+Layout.defaultProps = {
+	gridTemplateColumns: 'repeat(12, 1fr)',
+	gridTemplateRows: 1,
+	gridColumnGap: 1,
+	px: 3,
 }

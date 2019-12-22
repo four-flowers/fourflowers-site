@@ -15,7 +15,6 @@ const App = props => {
     <Theme>
       <Meta/>
       <Intro/>
-      <Links/>
       <For/>
       <How/>
       <Pillars/>

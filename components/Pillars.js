@@ -6,7 +6,7 @@ import { Pillar, Title, Paragraph } from './PillarsEls'
 const Pillars = props => {
 	return (
 		<Flex bg='grey' color='blue' variant='flexes.css'>
-			<Heading color='#0F72B9' borderColor='blacks.1'>Three pillars</Heading>
+			<Heading color='#0F72B9'>Three pillars</Heading>
 
 			<Pillar
 				heading='To be'

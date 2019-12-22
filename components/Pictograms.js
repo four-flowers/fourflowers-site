@@ -4,6 +4,7 @@ import { Flex } from 'rebass'
 export const IconFind = props => {
 	return (
 		<Flex
+			pb={5} pt={5}
 			sx={{
 				width: '-webkit-fill-available',
 				maxWidth: '332px',
@@ -57,7 +58,7 @@ export const IconFind = props => {
 
 export const IconCreate = props => {
 	return (
-		<Flex pt={props.pt}>
+		<Flex pb={5} pt={5}>
 			<svg
 				width={props.size}
 				height={props.size}
@@ -90,7 +91,7 @@ export const IconCreate = props => {
 
 export const IconConnect = props => {
 	return (
-		<Flex pt={props.pt}>
+		<Flex pb={5} pt={5}>
 			<svg
 				width={props.size}
 				height={props.size}

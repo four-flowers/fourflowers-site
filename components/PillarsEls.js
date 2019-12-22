@@ -23,11 +23,14 @@ export const Pillar = props => {
 	return (
 		<Flex
 			as='section'
-			width='100%' py={7} px={3} variant='flexes.css'
+			py={7}
+			px={3}
+			m={3}
+			mt={0}
+			variant='flexes.css'
 			sx={{
-				borderBottom: '1px solid',
-				borderColor: 'border',
-				':last-child': {borderColor: 'transparent'},
+				border: '1px dashed',
+				borderColor: 'blacks.2',
 			}}
 		>
 			
@@ -47,7 +50,7 @@ export const Pillar = props => {
 					sx={{
 						':after': {
 							content: setToggle,
-							right: 3,
+							right: 5,
 							position: 'absolute',
 						}
 					}}
