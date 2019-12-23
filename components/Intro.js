@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Text } from 'rebass'
 import { Logo, Links } from './bridge'
+import Test from './Test'
 
 const Intro = props => {
 	return (
@@ -9,6 +10,7 @@ const Intro = props => {
 			p={3}
 			variant='flexes.cbc'
 		>
+			<Test/>
 			<Flex as='header' variant='flexes.ccc' flexGrow='1'>
 				<Logo/>
 				<Text
@@ -21,7 +23,7 @@ const Intro = props => {
 			</Flex>
 
 			<Links/>
-			
+
 		</Flex>
 		)
 }

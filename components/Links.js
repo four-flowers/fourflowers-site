@@ -9,7 +9,8 @@ const Links = props => {
 			py={5}
 			px={3}
 			width='-webkit-fill-available'
-			columns='repeat(2, 1fr)'
+			columns={{all: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)'}}
+			rows={{all: 'repeat(2, 1fr)', md: 'repeat(1, 1fr)'}}
 			gap='3'
 			variant='flexes.rse'
 			sx={{
@@ -18,11 +19,14 @@ const Links = props => {
 				}}
 		>
 
-			<Grid gridColumn={'1'}>
+			<Grid gridColumn={1} gridRow={1}>
 				<Text variant='desc'>A personalised learning resource for self-directed learners.</Text>
 			</Grid>
-			<Grid gridColumn={'2'}>
-				<Flex variant='flexes.rss' variant='text.desc'>
+			<Grid
+				gridColumn={{all: 1, md: 2}}
+				gridRow={{all: 2, md: 1}}
+			>
+				<Flex variant={{all: 'flexes.rbe'}}>
 					<Link href='#' pr={5}>Mission</Link>
 					<Link href='mailto:mmarypo@gmail.com' pr={5}>Contact</Link>
 					<Link href='./test' pr={5}>Subscribe</Link>

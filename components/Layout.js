@@ -14,7 +14,7 @@ export const Layout = props => {
 			{...props}
 			gridTemplateColumns={props.columns}
 			gridTemplateRows={props.rows}
-			gridColumnGap={props.gap}
+			gridGap={props.gap}
 			px={props.px}
 		/>
 	)

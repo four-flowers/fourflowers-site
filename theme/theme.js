@@ -71,6 +71,7 @@ const theme = {
 	fonts,
 	text,
 	variants,
+	flexes,
 }
 
 const Global = injectGlobal`
