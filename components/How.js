@@ -41,7 +41,7 @@ const How = props => {
 				<Text as='h2' pb={3} variant='heading'>Find</Text>
 				<Text variant='desc'>a teacher or become one</Text>
 			</Cell>
-			<Cell column={1} row={2}>
+			<Cell column={1} row={2} py={5}>
 				<IconFind />
 			</Cell>
 

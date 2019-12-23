@@ -5,12 +5,16 @@ import { jsx } from '@emotion/core'
 
 export const IconFind = props => {
 	return (
-		<Flex py={5} sx={{ position: 'relative' }}>
+		<Flex
+			sx={{
+				position: 'relative',
+			}}
+		>
 				<Flex
 					sx={{
 						m: 'auto',
-						width: '100px',
-						height: '100px',
+						width: '60%',
+						height: '60%',
 						position: 'absolute',
 						top: 0,
 						right: 0,
@@ -25,9 +29,9 @@ export const IconFind = props => {
 							content: `""`,
 							top: 0,
 							left: 0,
-							transform: 'translate(-80%, 0)',
-							width: '100px',
-							height: '100px',
+							transform: 'translate(-40%, 0)',
+							width: '60%',
+							height: '60%',
 							borderRadius: '999px',
 							border: '1px solid white',
 							background: 'radial-gradient(87.17% 87.17% at 50% 50%, rgba(255, 255, 255, 0.16) 0%, #FFFFFF 100%)',
