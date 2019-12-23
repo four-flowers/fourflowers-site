@@ -1,4 +1,5 @@
-// forked from 'rebass'
+// Fork of 'rebass'
+// https://github.com/rebassjs/rebass
 
 import React from 'react'
 import styled from '@emotion/styled'
@@ -28,10 +29,15 @@ const __variant = ({
     )
   )(theme)
 
-// Flexbox styles
+/* Add flexbox snippets */
 const flexes = variant({
 	key: 'flexes',
 	prop: 'flexes',
+})
+/* Add text decoration */
+const decoration = variant({
+	key: 'decoration',
+	prop: 'decoration',
 })
 
 export const Box = styled('div', {
@@ -43,6 +49,7 @@ export const Box = styled('div', {
 },
   base,
   flexes,
+  decoration,
   __variant,
   variant,
   sx,
@@ -58,5 +65,10 @@ export const Box = styled('div', {
 )
 
 export const Flex = styled(Box)({
-  display: 'flex'
+  display: 'flex',
+  flexWrap: 'wrap',
+})
+
+export const Grid = styled(Box)({
+	display: 'grid',
 })

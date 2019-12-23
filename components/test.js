@@ -1,11 +1,13 @@
 import React from 'react'
-import { Flex, Text } from './system/system'
+import { Flex, Text, Link } from './system/system'
 
 const Test = props => {
 	return (
 
 		<Flex flexes={{all: 'rcc'}} sx={{position: 'fixed'}}>
-			<Text variant='text.desc'>Hello</Text>
+			<Text variant='desc' decoration='default'>Hello</Text>
+			<Link variant='desc' decoration='default'>Hello</Link>
+
 		</Flex>
 
 		)

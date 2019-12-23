@@ -31,7 +31,7 @@ const colors = {
 }
 
 const fonts = {
-	sans: 'Helvetica Neue, sans-serif',
+	sans: 'Helvetica Neue, Sans-Serif',
 	spaced: 'iA Writer Quattro S, monospace',
 }
 
@@ -40,24 +40,34 @@ const text = {
 		fontSize: ['2rem', null, '5rem'],
 		lineHeight: 1.2,
 		fontFamily: 'sans',
+		fontWeight: 'normal',
 		letterSpacing: ['.02em', null, '.04em'],
 	},
 	heading: {
 		fontSize: ['1.75rem', null, '3rem'],
 		lineHeight: 1.25,
 		fontFamily: 'sans',
+		fontWeight: 'normal',
 		letterSpacing: ['.02em', null, '.04em'],
 	},
 	body: {
 		fontSize: ['1.75rem', '3rem'],
 		lineHeight: 1.2,
 		fontFamily: 'spaced',
+		fontWeight: 'normal',
 	},
 	desc: {
 		fontSize: ['1.25rem', '1.75rem'],
 		lineHeight: 1.5,
 		fontFamily: 'spaced',
+		fontWeight: 'normal',
 	},
+}
+
+const decoration = {
+	default: {
+		textDecoration: 'underline',
+	}
 }
 
 const variants = {
@@ -72,6 +82,7 @@ const theme = {
 	text,
 	variants,
 	flexes,
+	decoration,
 }
 
 const Global = injectGlobal`
@@ -83,6 +94,7 @@ const Global = injectGlobal`
 	  -webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
 	  font-size: 16px;
+	  font-weight: normal;
 	  font-family: ${fonts.sans};
 	  -webkit-text-size-adjust: 100%;
 	}
@@ -113,14 +125,12 @@ const Global = injectGlobal`
 
 	a {
 		text-decoration: none;
-		font-size: inherit;
-		font-family: inherit;
-		border-bottom: 1px solid ${colors.transparent};
 		color: inherit;
 		cursor: pointer;
 	}
 
-	h1, h2, h3, h4 {
+	h1, h2, h3, h4, p, a {
+		font-weight: normal;
 		font-size: inherit;
 		font-weight: inherit;
 	}

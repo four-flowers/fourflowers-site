@@ -7,14 +7,13 @@ export const Text = forwardRef((props, ref) =>
   <Box
     ref={ref}
     as='p'
-    variant='text'
+    tx='text'
     {...props}
   />
 )
 
 export const Link = forwardRef((props, ref) =>
-  <Box
-    ref={ref}
+  <Text
     as='a'
     variant='link'
     {...props}
