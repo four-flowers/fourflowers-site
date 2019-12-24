@@ -37,7 +37,7 @@ const fonts = {
 
 const text = {
 	title: {
-		fontSize: ['2rem', null, '5rem'],
+		fontSize: ['2rem', null, '3rem', '5rem'],
 		lineHeight: 1.2,
 		fontFamily: 'sans',
 		fontWeight: 'normal',
@@ -57,7 +57,7 @@ const text = {
 		fontWeight: 'normal',
 	},
 	desc: {
-		fontSize: ['1.25rem', '1.75rem'],
+		fontSize: ['1.25rem', null, '1.75rem'],
 		lineHeight: 1.5,
 		fontFamily: 'spaced',
 		fontWeight: 'normal',
@@ -67,6 +67,8 @@ const text = {
 const decoration = {
 	default: {
 		textDecoration: 'underline',
+		// borderBottom: '1px solid',
+		// borderColor: 'black',
 	}
 }
 
@@ -130,6 +132,7 @@ const Global = injectGlobal`
 	}
 
 	h1, h2, h3, h4, p, a {
+		font-family: inherit;
 		font-weight: normal;
 		font-size: inherit;
 		font-weight: inherit;

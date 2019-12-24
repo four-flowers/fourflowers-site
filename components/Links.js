@@ -1,39 +1,59 @@
 import React from 'react'
-import { Box, Flex, Text, Link } from 'rebass'
+import { Box, Flex, Text, Link } from './system'
 import { Layout, Grid } from './Layout'
 import NextLink from 'next/link'
 
 const Links = props => {
 	return (
-		<Layout
-			py={5}
-			px={3}
+		<Flex
+			py={{all: 3, lg: 5}}
+			px={{all: 2, lg: 3}}
 			width='-webkit-fill-available'
-			columns={{all: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)'}}
-			rows={{all: 'repeat(2, 1fr)', md: 'repeat(1, 1fr)'}}
-			gap='3'
-			variant='flexes.rse'
+			height={{all: 'fit-content', lg: 'auto'}}
+			flexes='rse'
 			sx={{
 				outline: '1px dashed',
 				outlineColor: 'blacks.2'
 				}}
 		>
 
-			<Grid gridColumn={1} gridRow={1}>
-				<Text variant='desc'>A personalised learning resource for self-directed learners.</Text>
-			</Grid>
-			<Grid
-				gridColumn={{all: 1, md: 2}}
-				gridRow={{all: 2, md: 1}}
+			<Flex
+				width={{all: 1, lg: 1/2}}
+				pb={{all: 3, lg: 'auto'}}
 			>
-				<Flex variant={{all: 'flexes.rbe'}}>
-					<Link href='#' pr={5}>Mission</Link>
-					<Link href='mailto:mmarypo@gmail.com' pr={5}>Contact</Link>
-					<Link href='./test' pr={5}>Subscribe</Link>
-				</Flex>
-			</Grid>
+				<Text variant='desc'>A personalised learning resource for self-directed learners.</Text>
+			</Flex>
 
-		</Layout>
+			<Flex
+				width={{all: 1, lg: 1/2}}
+				flexes={{all: 'rbe', lg: 'rss'}}
+			>
+				<Link
+					variant='desc'
+					decoration='default'
+					href='#'
+					mr={{all: 0, lg: 5}}
+				>
+					Mission
+				</Link>
+				<Link
+					variant='desc'
+					decoration='default'
+					href='mailto:mmarypo@gmail.com'
+					mr={{all: 0, lg: 5}}
+				>
+					Contact
+				</Link>
+				<Link
+					variant='desc'
+					decoration='default'
+					href='./test'
+				>
+					Subscribe
+				</Link>
+			</Flex>
+
+		</Flex>
 		)
 }
 

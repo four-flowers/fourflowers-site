@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Flex, Text } from 'rebass'
+import { Flex, Text } from './system'
 
 
 export const Pillar = props => {
@@ -7,7 +7,7 @@ export const Pillar = props => {
 	const [setActive, setActiveState] = useState('')
 	const [setHeight, setHeightState] = useState('0px')
 	const [setOpacity, setOpacityState] = useState(0)
-	const [setTransition, setTransitionState] = useState('opacity .2s ease')
+	const [setTransition, setTransitionState] = useState('opacity .05s ease')
 	const [setToggle, setToggleState] = useState('"+"')
 
 	const paragraph = useRef(null)
@@ -16,7 +16,7 @@ export const Pillar = props => {
 		setActiveState(setActive === '' ? 'active' : '')
 		setHeightState(setActive === 'active' ? '0px' : `${paragraph.current.scrollHeight}px`)
 		setOpacityState(setActive === 'active' ? 0 : 1)
-		setTransitionState(setActive === 'active' ? 'opacity .2s ease' : 'opacity .5s ease .25s')
+		setTransitionState(setActive === 'active' ? 'opacity .2s ease' : 'opacity .3s ease .05s')
 		setToggleState(setActive === 'active' ? '"+"' : '"–"')
 	}
 	
@@ -67,7 +67,7 @@ export const Pillar = props => {
 					sx={{
 							overflow: 'hidden',
 							maxHeight: setHeight,
-							transition: 'max-height .5s ease',
+							transition: 'max-height .2s ease',
 						}}
 				>
 					<Text as='p' width={2/3} variant='desc' py={3}

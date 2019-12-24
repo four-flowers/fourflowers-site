@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react'
-import { Flex } from 'rebass'
+import { Flex } from './system'
 import { jsx } from '@emotion/core'
 
 export const IconFind = props => {

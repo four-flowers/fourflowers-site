@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text } from 'rebass'
+import { Flex, Text, Link } from './system'
 import { Heading } from './bridge'
 
 const Mission = props => {
@@ -18,8 +18,8 @@ const Mission = props => {
 				variant='flexes.cec'
 				color='black'
 			>
-				<Text variant='body' pb={3} >We believe text, something about equal oportunities for free education, for everyone. We believe we can do better. Learn more about our mission.</Text>
-				<Text variant='body' pb={7}>Want to support the project? Subscribe to updates or contact us.</Text>
+				<Text variant='body' pb={3} >We believe text, something about equal oportunities for free education, for everyone. We believe we can do better. <Link href='#' decoration='default'>Learn more</Link> about our mission.</Text>
+				<Text variant='body' pb={7}>Want to support the project? <Link href='#' decoration='default'>Subscribe to updates</Link> or contact us.</Text>
 				
 				<Flex
 					width='100%'
@@ -27,11 +27,11 @@ const Mission = props => {
 					variant='flexes.rbe'
 					sx={{
 						outline: '1px dashed',
-						outlineColor: 'blacks.2',
+						outlineColor: 'brown',
 				}}
 				> 
 					<Text variant='desc' color='brown'>Freemia School · Family Education © 2019</Text>
-					<Text variant='desc' color='brown'>Twitter</Text>
+					<Link variant='desc' decoration='default' color='brown'>Twitter</Link>
 				</Flex>
 			</Flex>
 		</Flex>

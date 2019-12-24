@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text } from 'rebass'
+import { Box, Text } from './system'
 import { grid } from 'styled-system'
 import styled from '@emotion/styled'
 

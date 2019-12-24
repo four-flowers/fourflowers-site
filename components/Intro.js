@@ -1,17 +1,20 @@
 import React from 'react'
-import { Flex, Text } from 'rebass'
+import { Flex, Text } from './system'
 import { Logo, Links } from './bridge'
-import Test from './Test'
 
 const Intro = props => {
 	return (
 		<Flex
-			height='100vh'
-			p={3}
-			variant='flexes.cbc'
+			height={{all: 'auto', sm: '100vh'}}
+			p={{all: 2, md: 3}}
+			flexes='cbc'
 		>
-			<Test/>
-			<Flex as='header' variant='flexes.ccc' flexGrow='1'>
+			<Flex
+				as='header'
+				flexes='ccc'
+				flexGrow='1'
+				py={{all: 5, lg: 'auto'}}
+			>
 				<Logo/>
 				<Text
 					as='h1'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text } from 'rebass'
+import { Flex, Text } from './system'
 import { Heading } from './bridge'
 
 const For = props => {
