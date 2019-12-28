@@ -20,6 +20,7 @@ const Intro = props => {
 					as='h1'
 					textAlign='center'
 					variant='title'
+					pt='3'
 				>
 					Freemia School <br/>Family Education
 				</Text>

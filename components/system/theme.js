@@ -51,7 +51,7 @@ const text = {
 		letterSpacing: ['.02em', null, '.04em'],
 	},
 	body: {
-		fontSize: ['1.75rem', '3rem'],
+		fontSize: ['1.75rem', null, '3rem'],
 		lineHeight: 1.2,
 		fontFamily: 'spaced',
 		fontWeight: 'normal',

@@ -5,39 +5,35 @@ import { jsx } from '@emotion/core'
 
 export const IconFind = props => {
 	return (
-		<Flex
-			sx={{
-				position: 'relative',
-			}}
-		>
-				<Flex
-					sx={{
-						m: 'auto',
+		<Flex sx={{ position: 'relative' }}>
+			<Flex
+				sx={{
+					m: 'auto',
+					width: '60%',
+					height: '60%',
+					position: 'absolute',
+					top: 0,
+					right: 0,
+					bottom: 0,
+					left: 0,
+					animation: 'rotate 40s infinite linear',
+					'@keyframes rotate': {
+						from: {transform: 'rotate(0deg)'},
+						to: {transform: 'rotate(360deg)'},
+					},
+					':before': {
+						content: `""`,
+						top: 0,
+						left: 0,
+						transform: 'translate(-40%, 0)',
 						width: '60%',
 						height: '60%',
-						position: 'absolute',
-						top: 0,
-						right: 0,
-						bottom: 0,
-						left: 0,
-						animation: 'rotate 40s infinite linear',
-						'@keyframes rotate': {
-							from: {transform: 'rotate(0deg)'},
-							to: {transform: 'rotate(360deg)'},
-						},
-						':before': {
-							content: `""`,
-							top: 0,
-							left: 0,
-							transform: 'translate(-40%, 0)',
-							width: '60%',
-							height: '60%',
-							borderRadius: '999px',
-							border: '1px solid white',
-							background: 'radial-gradient(87.17% 87.17% at 50% 50%, rgba(255, 255, 255, 0.16) 0%, #FFFFFF 100%)',
-						}
-						}}
-				/>
+						borderRadius: '999px',
+						border: '1px solid white',
+						background: 'radial-gradient(87.17% 87.17% at 50% 50%, rgba(255, 255, 255, 0.16) 0%, #FFFFFF 100%)',
+					}
+					}}
+			/>
 
 			<svg
 				width="100%"
@@ -82,7 +78,7 @@ export const IconFind = props => {
 
 export const IconCreate = props => {
 	return (
-		<Flex pb={5} pt={5}>
+		<Flex>
 			<svg
 				width="100%"
 				height="100%"
@@ -115,7 +111,7 @@ export const IconCreate = props => {
 
 export const IconConnect = props => {
 	return (
-		<Flex pb={5} pt={5}>
+		<Flex>
 			<svg
 				width="100%"
 				height="100%"

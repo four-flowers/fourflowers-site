@@ -6,8 +6,8 @@ const Mission = props => {
 	return (
 		<Flex
 			as='section'
-			height='100vh'
-			variant='flexes.css'
+			height={{all: 'auto', lg: '100vh'}}
+			flexes='css'
 			bg='yellow'
 		>
 			<Heading color='black'>Mission</Heading>
@@ -15,7 +15,7 @@ const Mission = props => {
 				flexGrow='1'
 				px={3}
 				pb={3}
-				variant='flexes.cec'
+				flexes='cec'
 				color='black'
 			>
 				<Text variant='body' pb={3} >We believe text, something about equal oportunities for free education, for everyone. We believe we can do better. <Link href='#' decoration='default'>Learn more</Link> about our mission.</Text>
@@ -24,7 +24,7 @@ const Mission = props => {
 				<Flex
 					width='100%'
 					p={3}
-					variant='flexes.rbe'
+					flexes='rbe'
 					sx={{
 						outline: '1px dashed',
 						outlineColor: 'brown',

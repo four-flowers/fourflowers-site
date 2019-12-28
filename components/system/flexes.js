@@ -4,6 +4,11 @@ export default {
 		justifyContent: 'space-between',
 		alignItems: 'flex-end',
 	},
+	rbs: {
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		alignItems: 'flex-start',
+	},
 	rse: {
 		flexDirection: 'row',
 		justifyContent: 'flex-start',
