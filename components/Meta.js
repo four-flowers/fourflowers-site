@@ -10,7 +10,7 @@ export const Meta = () => {
     	<meta name="description" content="A personalised learning resource for self-directed learners." />
 			<meta name="keywords" content="education, unschooling, free-schooling, school" />
 		  
-			<meta property="og:image" content="https://freemia.school/preview.jpg" />
+			<meta property="og:image" content="https://freemia.school/logo.jpg" />
 			<meta property="image:width" content="1920" />
 			<meta property="image:height" content="1080" />
 			<meta property="og:title" content="Freemia School · Family Education" />
