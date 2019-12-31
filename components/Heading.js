@@ -22,7 +22,7 @@ const Heading = props => {
 					':before': {
 						content: `'●'`,
 						position: 'absolute',
-						left: [2, 2, 2, 4],
+						left: [2, 2, 2, 3],
 						color: 'transparent',
 						'WebkitTextStrokeWidth': '1px',
 						'WebkitTextStrokeColor': `${props.color}`,
