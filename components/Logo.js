@@ -1,10 +1,11 @@
 import React from 'react'
-import { Flex, Text } from './system'
+import { Flex, Text, Link } from './system'
 import { Base, TopRight, RightBottom, BottomLeft, TopLeft } from './LogoEls'
 
 const Logo = props => {
 	return (
 
+<Link href='/'>
 		<Flex
 			sx={{
 				position: 'relative',
@@ -62,6 +63,7 @@ const Logo = props => {
 			/>
 			<Base/>
 		</Flex>
+</Link>
 		)
 }
 

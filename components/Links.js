@@ -8,7 +8,8 @@ const Links = props => {
 		<Flex
 			py={{all: 3, lg: 5}}
 			px={{all: 2, lg: 3}}
-			width='-webkit-fill-available'
+			mx={{all: 0, xlg: 7}}
+			width={{all: '-webkit-fill-available'}}
 			height={{all: 'fit-content', lg: 'auto'}}
 			flexes='rse'
 			sx={{
@@ -19,35 +20,44 @@ const Links = props => {
 
 			<Flex
 				width={{all: 1, lg: 1/2}}
-				pb={{all: 3, lg: 'auto'}}
+				pb={{all: 3, lg: 0}}
+				pr={{all: 0, lg: 3}}
 			>
-				<Text variant='desc'>A personalised learning resource for self-directed learners.</Text>
+				<Text
+					width={{all: '100%', lg: 'auto'}}
+					variant='desc'
+					textAlign={{all: 'center', lg: 'left'}}
+				>
+					A personalised learning resource for
+					<Box as='span' sx={{flexWrap: 'nowrap!important'}}> self-directed </Box>
+					learners.
+				</Text>
 			</Flex>
 
 			<Flex
 				width={{all: 1, lg: 1/2}}
-				flexes={{all: 'rbe', lg: 'rss'}}
+				flexes={{all: 'rcc', lg: 'rss'}}
 			>
 				<Link
 					variant='desc'
 					decoration='default'
-					href='#'
-					mr={{all: 0, lg: 5}}
+					href='/mission'
+					mr={{all: 2, sm: 3,  lg: 5}}
 				>
 					Mission
 				</Link>
 				<Link
 					variant='desc'
 					decoration='default'
-					href='mailto:mmarypo@gmail.com'
-					mr={{all: 0, lg: 5}}
+					href='mailto:hi@freemia.school'
+					mr={{all: 2, sm: 3,  lg: 5}}
 				>
 					Contact
 				</Link>
 				<Link
 					variant='desc'
 					decoration='default'
-					href='./test'
+					href='http://eepurl.com/gOnRAz'
 				>
 					Subscribe
 				</Link>

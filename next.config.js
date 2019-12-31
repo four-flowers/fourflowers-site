@@ -1,5 +1,11 @@
 module.exports = {
-  devIndicators: {
-    autoPrerender: false,
-  },
-}
+  exportTrailingSlash: true,
+  exportPathMap: async function() {
+    const paths = {
+      '/': { page: '/' },
+      '/mission': { page: '/mission' }
+    }
+
+    return paths;
+  }
+};

@@ -23,9 +23,9 @@ export const Pillar = props => {
 	return (
 		<Flex
 			as='section'
-			py={7}
-			px={3}
-			m={3}
+			py={{all: 5, md: 7}}
+			px={{all: 2, md: 3}}
+			m={{all: 2, md: 3}}
 			mt={0}
 			variant='flexes.css'
 			sx={{
@@ -50,14 +50,14 @@ export const Pillar = props => {
 					sx={{
 						':after': {
 							content: setToggle,
-							right: 5,
+							right: [3, 3, 3, 5],
 							position: 'absolute',
 						}
 					}}
 				>
 				 {props.heading}
 				</Text>
-				<Text variant='body' pt={3}>{props.subheading}</Text>
+				<Text variant='body' pt={{all: 1, md: 3}}>{props.subheading}</Text>
 
 			</Flex>
 			
@@ -70,7 +70,12 @@ export const Pillar = props => {
 							transition: 'max-height .2s ease',
 						}}
 				>
-					<Text as='p' width={2/3} variant='desc' py={3}
+					<Text
+						as='p'
+						width={{all: 1, lg: 2/3}}
+						pt={3}
+						pb={{all: 0, md: 3}}
+						variant='desc'
 						sx={{
 							opacity: setOpacity,
 							transition: setTransition,

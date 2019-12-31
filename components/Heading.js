@@ -5,7 +5,7 @@ const Heading = props => {
 	return (
 		<Flex
 			py={3}
-			px={3}
+			px={{all: 2, md: 3}}
 			bg={props.bg}
 			width='100%'
 			variant='flexes.ccc'
@@ -22,7 +22,7 @@ const Heading = props => {
 					':before': {
 						content: `'●'`,
 						position: 'absolute',
-						left: 4,
+						left: [2, 2, 2, 4],
 						color: 'transparent',
 						'WebkitTextStrokeWidth': '1px',
 						'WebkitTextStrokeColor': `${props.color}`,

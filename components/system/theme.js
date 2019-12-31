@@ -3,12 +3,13 @@ import { ThemeProvider } from 'emotion-theming'
 import { injectGlobal } from 'emotion'
 import flexes from './flexes'
 
-const breakpoints = [0, '40em', '64em', '80em', '90em']
+const breakpoints = [0, '40em', '64em', '80em', '90em', '100em']
 breakpoints.all	= breakpoints[0]
 breakpoints.sm	= breakpoints[1] // 640
 breakpoints.md	= breakpoints[2] // 1024
 breakpoints.lg	= breakpoints[3] // 1280
 breakpoints.xlg	= breakpoints[4] // 1440+
+breakpoints.xxlg	= breakpoints[5] // 1440+
 
 const space = [0, 8, 16, 32, 48, 64, 96, 128, 256]
 
@@ -32,7 +33,7 @@ const colors = {
 
 const fonts = {
 	sans: 'Helvetica Neue, Sans-Serif',
-	spaced: 'iA Writer Quattro S, monospace',
+	spaced: 'monospace',
 }
 
 const text = {
@@ -44,14 +45,14 @@ const text = {
 		letterSpacing: ['.02em', null, '.04em'],
 	},
 	heading: {
-		fontSize: ['1.75rem', null, '3rem'],
+		fontSize: ['1.75rem', null, '2.25rem', null, '3rem'],
 		lineHeight: 1.25,
 		fontFamily: 'sans',
 		fontWeight: 'normal',
 		letterSpacing: ['.02em', null, '.04em'],
 	},
 	body: {
-		fontSize: ['1.75rem', null, '3rem'],
+		fontSize: ['1.75rem', null, '2.25rem', null, '3rem'],
 		lineHeight: 1.2,
 		fontFamily: 'spaced',
 		fontWeight: 'normal',
@@ -88,6 +89,7 @@ const theme = {
 }
 
 const Global = injectGlobal`
+
 	* {
 	  margin: 0;
 	  padding: 0;
@@ -131,7 +133,7 @@ const Global = injectGlobal`
 		cursor: pointer;
 	}
 
-	h1, h2, h3, h4, p, a {
+	h1, h2, h3, h4, p, a, span {
 		font-family: inherit;
 		font-weight: normal;
 		font-size: inherit;
