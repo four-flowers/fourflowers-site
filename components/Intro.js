@@ -14,7 +14,7 @@ const Intro = props => {
 		>
 			<Flex
 				as='header'
-				height={{all: 'auto', sm: '70vh'}}
+				minHeight={{all: 'auto', sm: '70vh'}}
 				flexes='ccc'
 				flexGrow='1'
 				py={{all: 5, lg: 'auto'}}
