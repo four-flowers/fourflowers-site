@@ -6,6 +6,7 @@ import For from './For'
 import How from './How'
 import Pillars from './Pillars'
 import Mission from './Mission'
+import Footer from './Footer'
 
 export {
 	Logo,
@@ -16,4 +17,5 @@ export {
 	How,
 	Pillars,
 	Mission,
+	Footer,
 }

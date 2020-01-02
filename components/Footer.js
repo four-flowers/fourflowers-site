@@ -1,15 +1,14 @@
 import React from 'react'
-import { Box, Flex, Grid, Text, Link } from './system'
+import { Flex, Grid, Text, Link } from './system'
 import { Layout } from './Layout'
 import NextLink from 'next/link'
 
-const Links = props => {
+const Footer = props => {
 	return (
 		<Layout
 			columns='12'
-			bg='grey'
-			py='5'
 			px='3'
+			py='5'
 		>
 			<Grid
 				gridColumn='4/ span 6'
@@ -27,7 +26,7 @@ const Links = props => {
 					textAlign='center'
 					pb='2'
 				>
-					A personalised learning resource for self&#8209;directed learners.
+					Freemia School · 2019 · Family Education
 				</Text>
 
 				<Flex flexes='rcc'>
@@ -37,7 +36,7 @@ const Links = props => {
 						href='/mission'
 						mr={{all: 2, sm: 3}}
 					>
-						Mission
+						Twitter
 					</Link>
 					<Link
 						variant='desc'
@@ -62,4 +61,4 @@ const Links = props => {
 		)
 }
 
-export default Links
+export default Footer

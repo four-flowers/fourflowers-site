@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react'
-import { Box, Flex } from './system/box'
+import { Box, Flex, Grid } from './system/box'
 
-export { Box, Flex }
+export { Box, Flex, Grid }
 
 export const Text = forwardRef((props, ref) =>
   <Box

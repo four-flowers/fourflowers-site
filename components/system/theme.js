@@ -9,7 +9,6 @@ breakpoints.sm	= breakpoints[1] // 640
 breakpoints.md	= breakpoints[2] // 1024
 breakpoints.lg	= breakpoints[3] // 1280
 breakpoints.xlg	= breakpoints[4] // 1440+
-breakpoints.xxlg	= breakpoints[5] // 1440+
 
 const space = [0, 8, 16, 32, 48, 64, 96, 128, 256]
 
@@ -53,13 +52,13 @@ const text = {
 	},
 	body: {
 		fontSize: ['1.75rem', null, '2.25rem', null, '3rem'],
-		lineHeight: 1.2,
+		lineHeight: 1.3,
 		fontFamily: 'spaced',
 		fontWeight: 'normal',
 	},
 	desc: {
-		fontSize: ['1.25rem', null, '1.75rem'],
-		lineHeight: 1.5,
+		fontSize: ['1.25rem', null, '1.5rem'],
+		lineHeight: 1.6,
 		fontFamily: 'spaced',
 		fontWeight: 'normal',
 	},

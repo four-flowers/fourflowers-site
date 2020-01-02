@@ -1,28 +1,21 @@
 import React from 'react'
-import { Box, Text } from './system'
-import { grid } from 'styled-system'
+import { Grid, Text } from './system'
 import styled from '@emotion/styled'
-
-export const Grid = styled(Box)`
-	${grid}
-	display: grid;
-`
 
 export const Layout = props => {
 	return (
 		<Grid
-			{...props}
-			gridTemplateColumns={props.columns}
-			gridTemplateRows={props.rows}
+			width='100%'
+			gridTemplateColumns={`repeat(${props.columns}, 1fr)`}
+			gridTemplateRows={`repeat(${props.rows}, 1fr)`}
 			gridGap={props.gap}
-			px={props.px}
+			{...props}
 		/>
 	)
 }
 
 Layout.defaultProps = {
 	gridTemplateColumns: 'repeat(12, 1fr)',
-	gridTemplateRows: 1,
-	gridColumnGap: 1,
-	px: 3,
+	gridTemplateRows: '1',
+	gridColumnGap: '3',
 }

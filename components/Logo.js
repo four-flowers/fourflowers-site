@@ -15,7 +15,7 @@ const Logo = props => {
 		>
 			<TopLeft
 				sx={{
-					animation: 'fade 16s infinite',
+					animation: 'fade 16s infinite -12s',
 					position: 'absolute',
 					'@keyframes fade': {
 						from: {opacity: 0},
@@ -28,7 +28,7 @@ const Logo = props => {
 			<TopRight
 				sx={{
 					position: 'absolute',
-					animation: 'fade 16s infinite 4s',
+					animation: 'fade 16s infinite -8s',
 					'@keyframes fade': {
 						from: {opacity: 0},
 						'52%': {opacity: 1},
@@ -40,7 +40,7 @@ const Logo = props => {
 			<RightBottom
 				sx={{
 					position: 'absolute',
-					animation: 'fade 16s infinite 8s',
+					animation: 'fade 16s infinite -4s',
 					'@keyframes fade': {
 						from: {opacity: 0},
 						'52%': {opacity: 1},
@@ -52,7 +52,7 @@ const Logo = props => {
 			<BottomLeft
 				sx={{
 					position: 'absolute',
-					animation: 'fade 16s infinite 12s',
+					animation: 'fade 16s infinite 0s',
 					'@keyframes fade': {
 						from: {opacity: 0},
 						'52%': {opacity: 1},

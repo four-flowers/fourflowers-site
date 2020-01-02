@@ -6,7 +6,7 @@ import {css} from 'emotion'
 const Intro = props => {
 	return (
 		<Flex
-			p={{all: 2, md: 3}}
+			// p={{all: 2, md: 3}}
 			flexes='cbc'
 			sx={{
 				flexWrap: 'nowrap',
