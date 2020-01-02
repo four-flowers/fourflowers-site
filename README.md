@@ -10,6 +10,10 @@
 - [Emotion.js](https://emotion.sh/)
 - [Styled System](https://styled-system.com/)
 
+### Install:
+
+`yarn install`
+
 ### Run:
 
 `next dev`
