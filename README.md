@@ -2,6 +2,8 @@
 
 <https://freemia.school>
 
+---
+
 ### Built with:
 
 - [Next.js](https://nextjs.org/)
