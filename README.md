@@ -16,4 +16,4 @@
 
 #### Run:
 
-`next dev`
+`npm run dev`
