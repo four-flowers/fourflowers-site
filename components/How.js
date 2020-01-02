@@ -8,8 +8,8 @@ const Cell = props => {
 	return (
 		<Flex
 			width={{all: 1, md: 1/3}}
-			px={{all: 2, md: 3}}
-			py={{all: 0, md: 7}}
+			px={{all: 0, md: 3}}
+			py={{all: 5, md: 7}}
 			color='grey'
 			flexes='ccc'
 			sx={{
@@ -33,7 +33,7 @@ const How = props => {
 			bg='brown'
 			color='grey'
 			flexes={{all: 'ccc', md: 'rbs'}}
-			px={{all: 2, sm: 3, md: 0}}
+			px={{all: 0, sm: 3, md: 0}}
 		>
 			<Cell>
 				<Flex

@@ -12,14 +12,12 @@ const Mission = props => {
 		>
 			<Heading color='black'>Mission</Heading>
 			<Flex
-				flexGrow='1'
 				px={{all: 2, md: 3}}
-				py={{all: 2, md: 5}}
-				// flexes='cec'
+				py={{all: 3, md: 5}}
 				color='black'
 			>
 				<Text variant='body' pb={3} >We believe in free education, for everyone. We believe we can do better. <Link href='#' decoration='default'>Learn more</Link> about our mission.</Text>
-				<Text variant='body' pb={{all: 5, md: 7}}>Want to support the project? <Link href='http://eepurl.com/gOnRAz' decoration='default'>Subscribe to updates</Link> or contact us.</Text>
+				<Text variant='body'>Want to support the project? <Link href='http://eepurl.com/gOnRAz' decoration='default'>Subscribe to updates</Link> or contact us.</Text>
 				
 			</Flex>
 			<Footer/>

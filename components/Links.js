@@ -8,12 +8,13 @@ const Links = props => {
 		<Layout
 			columns='12'
 			bg='grey'
-			py='5'
-			px='3'
+			px={{all: 2, md: 3}}
+			py={{all: 3, md: 5}}
 		>
 			<Grid
-				gridColumn='4/ span 6'
-				p='3'
+				gridColumn={{all: '1/ -1', sm: '2/ -2', md: '4/ span 6'}}
+				px={{all: 2, md: 3}}
+				py={{all: 3, md: 5}}
 				bg='white'
 				flexes='ccc'
 				sx={{

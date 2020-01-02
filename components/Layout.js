@@ -7,8 +7,7 @@ export const Layout = props => {
 		<Grid
 			width='100%'
 			gridTemplateColumns={`repeat(${props.columns}, 1fr)`}
-			gridTemplateRows={`repeat(${props.rows}, 1fr)`}
-			gridGap={props.gap}
+			gridGap={{all: 2, md: 3}}
 			{...props}
 		/>
 	)
@@ -16,6 +15,4 @@ export const Layout = props => {
 
 Layout.defaultProps = {
 	gridTemplateColumns: 'repeat(12, 1fr)',
-	gridTemplateRows: '1',
-	gridColumnGap: '3',
 }
