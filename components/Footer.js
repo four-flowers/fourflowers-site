@@ -7,8 +7,8 @@ const Footer = props => {
 	return (
 		<Layout
 			columns='12'
-			px={{all: 2, md: 3}}
-			py={{all: 3, md: 5}}
+			px={{ all: 2, md: 3 }}
+			py={{ all: 3, md: 5 }}
 		>
 			<Grid
 				gridColumn={{all: '1/ -1', sm: '2/ -2', md: '4/ span 6'}}
