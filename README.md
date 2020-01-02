@@ -4,16 +4,16 @@
 
 ---
 
-### Built with:
+#### Built with:
 
 - [Next.js](https://nextjs.org/)
 - [Emotion.js](https://emotion.sh/)
 - [Styled System](https://styled-system.com/)
 
-### Install:
+#### Install:
 
 `yarn install`
 
-### Run:
+#### Run:
 
 `next dev`
