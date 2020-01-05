@@ -2,8 +2,21 @@ import React from 'react'
 import { Box, Flex, Grid, Text, Link } from './system'
 import { Layout } from './Layout'
 import NextLink from 'next/link'
+import { Copy } from './bridge'
 
 const Links = props => {
+
+	const linkArray = Copy.intro.links.map(item => {return (
+		<Link
+			variant='desc'
+			decoration='default'
+			mr={{all: 2, sm: 3}}
+			sx={{':last-child': {mr: '0'}}}
+			href={item.href}
+			dangerouslySetInnerHTML={{ __html: item.name }}
+		/>
+	)})
+
 	return (
 		<Layout
 			columns='12'
@@ -27,35 +40,10 @@ const Links = props => {
 					variant='desc'
 					textAlign='center'
 					pb='2'
-				>
-					A personalised learning resource for self&#8209;directed learners.
-				</Text>
+					dangerouslySetInnerHTML={{ __html: Copy.intro.description }}
+				/>
 
-				<Flex flexes='rcc'>
-					<Link
-						variant='desc'
-						decoration='default'
-						href='/mission'
-						mr={{all: 2, sm: 3}}
-					>
-						Mission
-					</Link>
-					<Link
-						variant='desc'
-						decoration='default'
-						href='mailto:hi@freemia.school'
-						mr={{all: 2, sm: 3}}
-					>
-						Contact
-					</Link>
-					<Link
-						variant='desc'
-						decoration='default'
-						href='http://eepurl.com/gOnRAz'
-					>
-						Subscribe
-					</Link>
-				</Flex>
+				<Flex flexes='rcc'>{linkArray}</Flex>
 				
 			</Grid>
 			

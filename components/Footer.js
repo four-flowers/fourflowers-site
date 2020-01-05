@@ -2,8 +2,21 @@ import React from 'react'
 import { Flex, Grid, Text, Link } from './system'
 import { Layout } from './Layout'
 import NextLink from 'next/link'
+import { Copy } from './bridge'
 
 const Footer = props => {
+
+	const linkArray = Copy.footer.links.map(item => {return (
+		<Link
+			variant='desc'
+			decoration='default'
+			mr={{all: 2, sm: 3}}
+			sx={{':last-child': {mr: '0'}}}
+			href={item.href}
+			dangerouslySetInnerHTML={{ __html: item.name }}
+		/>
+	)})
+
 	return (
 		<Layout
 			columns='12'
@@ -27,34 +40,10 @@ const Footer = props => {
 					textAlign='center'
 					pb='2'
 				>
-					Freemia School · 2019
+					{Copy.footer.description}
 				</Text>
 
-				<Flex flexes='rcc'>
-					<Link
-						variant='desc'
-						decoration='default'
-						href='/mission'
-						mr={{all: 2, sm: 3}}
-					>
-						Twitter
-					</Link>
-					<Link
-						variant='desc'
-						decoration='default'
-						href='mailto:hi@freemia.school'
-						mr={{all: 2, sm: 3}}
-					>
-						Contact
-					</Link>
-					<Link
-						variant='desc'
-						decoration='default'
-						href='http://eepurl.com/gOnRAz'
-					>
-						Subscribe
-					</Link>
-				</Flex>
+				<Flex flexes='rcc'>{linkArray}</Flex>
 				
 			</Grid>
 			

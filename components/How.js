@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Text } from './system'
 import { Layout, Grid } from './Layout'
+import { Copy } from './bridge'
 
 import { IconFind, IconCreate, IconConnect } from './Pictograms.js'
 
@@ -43,8 +44,8 @@ const How = props => {
 					textAlign='center'
 					width='100%'
 				>
-					<Text as='h2' variant='heading'>Find</Text>
-					<Text variant='desc'>a teacher or become one</Text>
+					<Text as='h2' variant='heading'>{Copy.how[0].heading}</Text>
+					<Text variant='desc'>{Copy.how[0].subHeading}</Text>
 				</Flex>
 				<IconFind />
 			</Cell>
@@ -56,8 +57,8 @@ const How = props => {
 					textAlign='center'
 					width='100%'
 				>
-					<Text as='h2' variant='heading'>Create</Text>
-					<Text variant='desc'>your own courses</Text>
+					<Text as='h2' variant='heading'>{Copy.how[1].heading}</Text>
+					<Text variant='desc'>{Copy.how[1].subHeading}</Text>
 				</Flex>
 				<IconCreate />
 			</Cell>
@@ -69,8 +70,8 @@ const How = props => {
 					textAlign='center'
 					width='100%'
 				>
-					<Text as='h2' variant='heading'>Connect</Text>
-					<Text variant='desc'>with students around you</Text>
+					<Text as='h2' variant='heading'>{Copy.how[2].heading}</Text>
+					<Text variant='desc'>{Copy.how[2].subHeading}</Text>
 				</Flex>
 				<IconConnect />
 			</Cell>

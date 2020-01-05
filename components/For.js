@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex, Text } from './system'
-import { Heading } from './bridge'
+import { Heading, Copy } from './bridge'
 
 const For = props => {
 	return (
@@ -11,7 +11,7 @@ const For = props => {
 			bg='blue'
 			color='grey'
 		>
-			<Heading color='#F9FAFC'>For everyone</Heading>
+			<Heading color='#F9FAFC'>{Copy.for.heading}</Heading>
 			<Flex
 				flexGrow='1'
 				flexes='cec'
@@ -20,8 +20,8 @@ const For = props => {
 					variant='body'
 					py={{all: 3, sm: 5, md: 7}}
 					px={{all: 2, md: 3}}
-				>
-					This place is created both for little self-learners, their parents, and for tutors. Whether you study at home or with a group, you are welcome to join our community to start learning and sharing knowledge.</Text>
+					dangerouslySetInnerHTML={{ __html: Copy.for.body }}
+				/>
 			</Flex>
 		</Flex>
 		)
