@@ -67,8 +67,6 @@ const text = {
 const decoration = {
 	default: {
 		textDecoration: 'underline',
-		// borderBottom: '1px solid',
-		// borderColor: 'black',
 	}
 }
 
