@@ -26,7 +26,7 @@ const Intro = props => {
 					variant='title'
 					pt='3'
 				>
-					Freemia School <br/>Family Education
+					Four Flowers School <br/>Family Education
 				</Text>
 			</Flex>
 
