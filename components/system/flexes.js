@@ -39,25 +39,36 @@ export default {
 		justifyContent: 'center',
 		alignItems: 'center',
 	},
-	ccc: {
-		flexDirection: 'column',
-		justifyContent: 'center',
-		alignItems: 'center',
-	},
+	// columns
 	css: {
 		flexDirection: 'column',
 		justifyContent: 'flex-start',
-		alignItems: 'flex-start',
-	},
-	ccs: {
-		flexDirection: 'column',
-		justifyContent: 'center',
 		alignItems: 'flex-start',
 	},
 	csc: {
 		flexDirection: 'column',
 		justifyContent: 'flex-start',
 		alignItems: 'center',
+	},
+	cse: {
+		flexDirection: 'column',
+		justifyContent: 'flex-start',
+		alignItems: 'flex-end',
+	},
+	ccs: {
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'flex-start',
+	},
+	ccc: {
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	ces: {
+		flexDirection: 'column',
+		justifyContent: 'flex-end',
+		alignItems: 'flex-start',
 	},
 	cbs: {
 		flexDirection: 'column',

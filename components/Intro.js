@@ -13,17 +13,19 @@ const Intro = props => {
 			}}
 		>
 			<Flex
+				width='100%'
 				as='header'
-				minHeight={{all: 'auto', sm: '70vh'}}
+				minHeight={{all: 'auto', sm: '76vh'}}
 				flexes='ccc'
 				flexGrow='1'
 				py={{all: 5, lg: 'auto'}}
+				sx={{background: 'linear-gradient(180deg, #FFF5F3 0%, #FFFFFF 100%)'}}
 			>
 				<Logo/>
 				<Text
 					as='h1'
 					textAlign='center'
-					variant='title'
+					variant='heading'
 					pt='3'
 				>
 					Four Flowers School <br/>Family Education

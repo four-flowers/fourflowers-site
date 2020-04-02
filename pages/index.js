@@ -2,6 +2,7 @@ import React from 'react'
 import { Theme } from '../components/system/theme'
 import { Meta } from '../components/Meta'
 import {
+  Nav,
   Intro,
   Links,
   For,
@@ -16,6 +17,7 @@ const App = props => {
   return (
     <Theme>
       <Meta/>
+      <Nav/>
       <Intro/>
       <For/>
       <Course/>

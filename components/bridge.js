@@ -1,5 +1,6 @@
 import { Layout } from './Layout'
 
+import Nav from './Nav'
 import Logo from './Logo'
 import Intro from './Intro'
 import Links from './Links'
@@ -14,6 +15,7 @@ import Copy from './Copy'
 
 export {
 	Layout,
+	Nav,
 	Logo,
 	Intro,
 	Links,
