@@ -10,7 +10,17 @@ breakpoints.md	= breakpoints[2] // 1024
 breakpoints.lg	= breakpoints[3] // 1280
 breakpoints.xlg	= breakpoints[4] // 1440+
 
-const space = [0, 8, 16, 32, 48, 64, 96, 128, 256]
+const space = [
+	0,		// 0
+	8,		// 1
+	16,		// 2
+	32,		// 3
+	48,		// 4
+	64,		// 5
+	96,		// 6
+	128,	// 7
+	256		// 8
+]
 
 const colors = {
 	transparent: 'rgba(0,0,0,.0)',
@@ -27,6 +37,7 @@ const colors = {
 	blue: '#0F72B9',
 	brown: '#CB996F',
 	yellow: '#FEDA31',
+	green: '#3E7247',
 	border: 'rgba(0,0,0,.08)',
 }
 
@@ -51,7 +62,7 @@ const text = {
 		letterSpacing: ['.02em', null, '.04em'],
 	},
 	body: {
-		fontSize: ['1.75rem', null, '2.25rem', null, '3rem'],
+		fontSize: ['1.75rem', null, '2.25rem'],
 		lineHeight: 1.3,
 		fontFamily: 'spaced',
 		fontWeight: 'normal',

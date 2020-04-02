@@ -4,7 +4,7 @@
 
 ---
 
-**Built with ** [Next.js](https://nextjs.org/), [Styled System](https://styled-system.com/).
+Built with [Next.js](https://nextjs.org/), [Styled System](https://styled-system.com/).
 
 **Install:** `yarn install`
 

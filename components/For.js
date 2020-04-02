@@ -1,28 +1,37 @@
-import React from 'react'
 import { Flex, Text } from './system'
-import { Heading, Copy } from './bridge'
+import { Heading, Copy, Layout } from './bridge'
 
 const For = props => {
 	return (
 		<Flex
 			as='section'
-			height={{all: 'auto', sm: '100vh'}}
+			minHeight={{all: 'auto', sm: '100vh'}}
 			flexes='css'
-			bg='blue'
+			bg='green'
 			color='grey'
 		>
 			<Heading color='#F9FAFC'>{Copy.for.heading}</Heading>
-			<Flex
+			<Layout
 				flexGrow='1'
-				flexes='cec'
+				// flexes='cec'
 			>
 				<Text
+					gridColumn='1/7'
 					variant='body'
 					py={{all: 3, sm: 5, md: 7}}
 					px={{all: 2, md: 3}}
-					dangerouslySetInnerHTML={{ __html: Copy.for.body }}
-				/>
-			</Flex>
+				>
+				{Copy.for.p1}
+				</Text>
+				<Text
+					gridColumn='7/-1'
+					variant='body'
+					py={{all: 3, sm: 5, md: 7}}
+					px={{all: 2, md: 3}}
+				>
+				{Copy.for.p2}
+				</Text>
+			</Layout>
 		</Flex>
 		)
 }

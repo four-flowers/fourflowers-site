@@ -6,8 +6,10 @@ import {
   Links,
   For,
   How,
-  Pillars,
+  Course,
   Mission,
+  Partners,
+  Footer,
 } from '../components/bridge'
 
 const App = props => {
@@ -16,9 +18,11 @@ const App = props => {
       <Meta/>
       <Intro/>
       <For/>
+      <Course/>
       <How/>
-      <Pillars/>
       <Mission/>
+      <Partners/>
+      <Footer/>
     </Theme>
     )
 }

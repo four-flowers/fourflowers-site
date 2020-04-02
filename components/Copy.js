@@ -8,7 +8,7 @@ const links = {
 		href: 'mailto:hi@freemia.school',
 	},
 	subscribe: {
-		name: 'Subscribe',
+		name: 'Get updates',
 		href: 'http://eepurl.com/gOnRAz',
 	},
 	twitter: {
@@ -19,61 +19,57 @@ const links = {
 
 export default {
 	intro: {
-		description: 'A personalised learning resource for self&#8209;directed learners.',
+		description: 'A learning resource helping self-directed learners.',
 		links: [
-			links.mission,
 			links.contact,
 			links.subscribe,
 		],
 	},
 	for: {
-		heading: 'For everyone',
-		body: 'This place is created both for little self-learners, their parents, and for tutors. Whether you study at home or with a group, you are welcome to join our community to start learning and sharing knowledge.'
+		heading: '',
+		'p1': 'This is a school for children practicing self-directed education, as well as for those who wants to complement the main program.',
+		'p2': 'If you create a curriculum yourself, this site will help you to meet, chat and share your education program with others, or join a program of your interest.',
 	},
-	how: [
-		{
-			heading: 'Find',
-			subHeading: 'a teacher or become one',
-		},
-		{
-			heading: 'Create',
-			subHeading: 'your own courses',
-		},
-		{
-			heading: 'Connect',
-			subHeading: 'with students around you',
-		},
-	],
-	pillars: {
-		heading: 'Three Pillars',
+	course: {
+		heading: 'Creating a course is simple',
+		pictograms: [
+			{
+				heading: 'Idea',
+				desc: 'Offer a course idea and describe what you want to learn.',
+			},
+			{
+				heading: 'Teacher',
+				desc: 'Find a teacher who can facilitate/mentor you.',
+			},
+			{
+				heading: 'Peers',
+				desc: 'Invite others to learn together!',
+			},
+		],
+	},
+	how: {
+		heading: 'How it works',
 		items: [
-			{
-				heading: 'To be',
-				subHeading: 'Know yourself better',
-				body: 'This type of learning answers such questions as “What do I love doing?”, “What is my dream?”, “What are my unique strengths?” and even “What is my role in a group?”. Here reflection is necessary. Learning to be is the most individualistic of the three different types of learning.',
-			},
-			{
-				heading: 'To know',
-				subHeading: 'Understand how world works',
-				body: 'The pillar focuses on knowledge that can be captured in books and lectures. This includes timelines and dates, definitions and facts. Most schools are very busy at developing this type of learning.',
-			},
-			{
-				heading: 'To do',
-				subHeading: 'Develop practical skills',
-				body: 'Focusing on developing skills that can be applied, such as in the productive world. Learning to do almost always involves significant practice. Learning to do topics include such abstract skills as leadership, innovation, stewardship, and project management on one end, and more literal skills, such as how to build, grow, use, or fix things, on the other.',
-			},
+			{id: 'a', desc: 'Create a topic for the course.'},
+			{id: 'b', desc: 'Invite a teacher who wants to make a course with you.'},
+			{id: 'c', desc: 'Describe with a teacher what the course will be about.'},
+			{id: 'd', desc: 'Define stages, time, and seminars together with a teacher.'},
+			{id: 'e', desc: 'Invite everyone interested.'},
+			{id: 'f', desc: 'Start the course.'},
 		],
 	},
 	mission: {
 		heading: 'Mission',
-		body: '[link!](https://link.com) We believe in free education, for everyone. We believe we can do better. Learn more about our mission.'
+		p1: 'In Four Flowers School you decide what subjects to study and in which order, what your learning style and comfortable pace are. This is a place where we trust your choice.',
+		p2: 'We believe that giving children freedom of knowledge is the best and most effective way of learning.'
 	},
+	partners: 'Join our community on Facebook and help create a free learning environment for children. The project is nonprofit, based on a personal desire of everyone to bring something to the world and share with the young generation what you know and can do.',
 	footer: {
-		description: 'Freemia School · 2019',
-		links: [
-			links.twitter,
-			links.contact,
-			links.subscribe,
-		],
+		desc: 'The platform is currently under development: you can be the first to test the platform by signing up for updates.',
+		copyright: 'Freemia School · 2019',
+		link: {
+			name: links.subscribe.name,
+			href: links.subscribe.name,
+		}
 	},
 }

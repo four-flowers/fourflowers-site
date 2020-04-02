@@ -8,6 +8,7 @@ const Links = props => {
 
 	const linkArray = Copy.intro.links.map(item => {return (
 		<Link
+			key={item.name}
 			variant='desc'
 			decoration='default'
 			mr={{all: 2, sm: 3}}
