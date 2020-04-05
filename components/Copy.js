@@ -5,7 +5,7 @@ export const links = {
 	},
 	contact: {
 		name: 'Contact',
-		href: 'mailto:hi@freemia.school',
+		href: 'mailto:info@fourflowers.school',
 	},
 	subscribe: {
 		name: 'Get updates',
