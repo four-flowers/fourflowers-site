@@ -1,3 +1,4 @@
+import React from 'react'
 import { Flex, Text, Link } from './system'
 import { Heading, Copy, Layout } from './bridge'
 

@@ -1,8 +1,8 @@
+import React from 'react'
 import { Flex, Text } from './system'
 import { Copy, Heading, Layout } from './bridge'
 
 import { IconFind, IconCreate, IconConnect } from './Pictograms.js'
-
 import { Cell, Title, Desc } from './CourseEls'
 
 export default function How(props) {

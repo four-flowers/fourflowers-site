@@ -1,6 +1,6 @@
+import React from 'react'
 import { Flex } from './system'
 import { Copy, Layout, Heading } from './bridge'
-
 import { Row } from './HowEls'
 
 export default function How(props) {

@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import React from 'react'
 import { Flex } from './system'
 import { jsx } from '@emotion/core'
