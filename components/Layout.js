@@ -8,7 +8,7 @@ export const Layout = props => {
 			width='100%'
 			px={{all: 2, sm: 3}}
 			gridTemplateColumns={`repeat(${props.columns}, 1fr)`}
-			gridColumnGap={{all: 1, md: 3}}
+			gridColumnGap={{all: 2, md: 3}}
 			{...props}
 		/>
 	)

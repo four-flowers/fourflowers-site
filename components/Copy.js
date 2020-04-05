@@ -31,7 +31,7 @@ export default {
 		'p2': 'By joining Four Flowers School, you will be able to meet, discuss, and share your education program with others, or simply join a program of your interest.',
 	},
 	course: {
-		heading: 'Creating a course is simple',
+		heading: 'Creating a course is simple:',
 		pictograms: [
 			{
 				heading: 'Idea',
@@ -48,7 +48,7 @@ export default {
 		],
 	},
 	how: {
-		heading: 'How it works',
+		heading: 'How it works:',
 		items: [
 			{id: 'a', desc: 'Create a topic for the course.'},
 			{id: 'b', desc: 'Invite a facilitator who wants to make a course with you.'},

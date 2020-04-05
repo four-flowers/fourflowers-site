@@ -3,7 +3,7 @@ import { Heading, Copy, Layout } from './bridge'
 
 export default function For(props) {
 	return (
-		<Flex as='section' bg='yellow'>
+		<Flex as='section' bg='yellow' flexes='css'>
 			<Heading color='#000'>{Copy.mission.heading}</Heading>
 			<Flex
 				width='100%'
