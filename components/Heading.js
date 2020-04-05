@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, Text } from './system'
 
-const Heading = props => {
+export default function Heading(props) {
 	return (
 		<Flex
 			py={3}
@@ -9,6 +9,7 @@ const Heading = props => {
 			bg={props.bg}
 			width='100%'
 			variant='flexes.ccc'
+			textAlign={{ all: 'center', sm: 'left' }}
 			sx={{
 				position: 'relative',
 				borderBottom: '1px solid',
@@ -36,8 +37,6 @@ const Heading = props => {
 		</Flex>
 		)
 }
-
-export default Heading
 
 Heading.defaultProps = {
 	borderColor: 'transparent'

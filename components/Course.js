@@ -3,9 +3,9 @@ import { Copy, Heading, Layout } from './bridge'
 
 import { IconFind, IconCreate, IconConnect } from './Pictograms.js'
 
-import { Cell, Title } from './CourseEls'
+import { Cell, Title, Desc } from './CourseEls'
 
-const How = props => {
+export default function How(props) {
 	const el = Copy.course.pictograms
 	return (
 		<Flex
@@ -13,27 +13,25 @@ const How = props => {
 			flexWrap='nowrap'
 			bg='brown'
 			color='grey'
-			flexes={{all: 'ccc', md: 'rbs'}}
-			px={{all: 0, sm: 3, md: 0}}
+			flexes={{ all: 'ccc', md: 'rbs' }}
+			px={{ all: 0, sm: 3, md: 0 }}
 		>
-		<Heading color='#CB996F'>{Copy.course.heading}</Heading>
+			<Heading color='#CB996F'>{Copy.course.heading}</Heading>
 			<Cell>
 				<Title>{el[0].heading}</Title>
 				<IconFind />
-				<Text variant='desc' pt={{all: 5, sm: 6}}>{el[0].desc}</Text>
+				<Desc>{el[0].desc}</Desc>
 			</Cell>
 			<Cell>
 				<Title>{el[1].heading}</Title>
 				<IconCreate />
-				<Text variant='desc' pt={{all: 5, sm: 6}}>{el[1].desc}</Text>
+				<Desc>{el[1].desc}</Desc>
 			</Cell>
 			<Cell>
 				<Title>{el[2].heading}</Title>
 				<IconConnect />
-				<Text variant='desc' pt={{all: 5, sm: 6}}>{el[2].desc}</Text>
+				<Desc>{el[2].desc}</Desc>
 			</Cell>
 		</Flex>
-		)
+	)
 }
-
-export default How 

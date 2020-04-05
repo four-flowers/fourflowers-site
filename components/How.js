@@ -9,19 +9,15 @@ export default function How(props) {
 			width='100%'
 			as='section'
 			bg='grey'
-			pb={6}
+			pb={{ all: 5, sm: 6 }}
 			color='blue'
 		>
-		<Heading color='#0F72B9'>{Copy.how.heading}</Heading>
-		<Layout py={6}>
-			{Copy.how.items.map(item =>
-				<Row
-					key={item.id}
-					id={item.id}
-					desc={item.desc}
-				/>
-				)}
-		</Layout>
+			<Heading color='#0F72B9'>{Copy.how.heading}</Heading>
+			<Layout py={6}>
+				{Copy.how.items.map(item => (
+					<Row key={item.id} id={item.id} desc={item.desc} />
+				))}
+			</Layout>
 		</Flex>
-		)
+	)
 }

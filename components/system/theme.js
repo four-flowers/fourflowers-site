@@ -3,12 +3,19 @@ import { ThemeProvider } from 'emotion-theming'
 import { injectGlobal } from 'emotion'
 import flexes from './flexes'
 
-const breakpoints = [0, '40em', '64em', '80em', '90em', '100em']
-breakpoints.all	= breakpoints[0]
-breakpoints.sm	= breakpoints[1] // 640
-breakpoints.md	= breakpoints[2] // 1024
-breakpoints.lg	= breakpoints[3] // 1280
-breakpoints.xlg	= breakpoints[4] // 1440+
+const breakpoints = [
+	'24rem',	// 1: 384
+	'48em',		// 2: 768
+	'64em',		// 3: 1024
+	'80em',		// 4: 1280
+	'90em',		// 5: 1440
+]
+breakpoints.all	= '0rem'
+breakpoints.xsm	= breakpoints[0]
+breakpoints.sm	= breakpoints[1]
+breakpoints.md	= breakpoints[2]
+breakpoints.lg	= breakpoints[3]
+breakpoints.xlg	= breakpoints[4]
 
 const space = [
 	0,		// 0
@@ -62,13 +69,13 @@ const text = {
 		letterSpacing: ['.02em', null, '.04em'],
 	},
 	body: {
-		fontSize: ['1.75rem', null, '2.25rem'],
+		fontSize: ['1.55rem', null, null, null, '2.25rem'],
 		lineHeight: 1.3,
 		fontFamily: 'spaced',
 		fontWeight: 'normal',
 	},
 	desc: {
-		fontSize: ['1.25rem', null, '1.5rem'],
+		fontSize: ['1rem', null, '1.35rem', null, '1.5rem'],
 		lineHeight: 1.6,
 		fontFamily: 'spaced',
 		fontWeight: 'normal',

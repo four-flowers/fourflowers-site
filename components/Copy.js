@@ -19,7 +19,7 @@ const links = {
 
 export default {
 	intro: {
-		description: 'A learning resource helping self-directed learners.',
+		description: 'A learning resource helping self&#x2011;directed learners.',
 		links: [
 			links.contact,
 			links.subscribe,
@@ -63,7 +63,10 @@ export default {
 		p1: 'In Four Flowers School you decide what subjects to study and in which order, what your learning style and comfortable pace are. This is a place where we trust your choice.',
 		p2: 'We believe that giving children freedom of knowledge is the best and most effective way of learning.'
 	},
-	partners: 'Join our community on Facebook and help create a free learning environment for children. The project is nonprofit, based on a personal desire of everyone to bring something to the world and share with the young generation what you know and can do.',
+	partners: {
+		heading: 'Partners',
+		desc: 'Join our community on Facebook and help create a free learning environment for children. The project is nonprofit, based on a personal desire of everyone to bring something to the world and share with the young generation what you know and can do.',
+	},
 	footer: {
 		desc: 'The platform is currently under development: you can be the first to test the platform by signing up for updates.',
 		copyright: 'Freemia School · 2019',

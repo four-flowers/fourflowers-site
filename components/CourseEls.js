@@ -3,7 +3,7 @@ import { Flex, Text } from './system'
 export const Cell = props =>
 	<Flex
 		width={{all: 1, md: 1/3}}
-		px={{all: 0, md: 3}}
+		px={{all: 2, md: 3}}
 		py={{all: 5, md: 7}}
 		color='grey'
 		flexes='ccc'
@@ -24,5 +24,13 @@ export const Title = props =>
 		flexes='ccc'
 		textAlign='center'
 		width='100%'
+		{...props}
+	/>
+
+export const Desc = props =>
+	<Text
+		variant='desc'
+		pt={{ all: 5, sm: 6 }}
+		textAlign={{ all: 'center', sm: 'left' }}
 		{...props}
 	/>

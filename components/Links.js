@@ -4,7 +4,7 @@ import { Layout } from './Layout'
 import NextLink from 'next/link'
 import { Copy } from './bridge'
 
-const Links = props => {
+export default function Links(props) {
 
 	const linkArray = Copy.intro.links.map(item => {return (
 		<Link
@@ -51,5 +51,3 @@ const Links = props => {
 		</Layout>
 		)
 }
-
-export default Links

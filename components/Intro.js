@@ -3,10 +3,9 @@ import { Flex, Text } from './system'
 import { Logo, Links } from './bridge'
 import {css} from 'emotion'
 
-const Intro = props => {
+export default function Intro(props) {
 	return (
 		<Flex
-			// p={{all: 2, md: 3}}
 			flexes='cbc'
 			sx={{
 				flexWrap: 'nowrap',
@@ -18,7 +17,7 @@ const Intro = props => {
 				minHeight={{all: 'auto', sm: '76vh'}}
 				flexes='ccc'
 				flexGrow='1'
-				py={{all: 5, lg: 'auto'}}
+				py={{all: 7, lg: 'auto'}}
 				sx={{background: 'linear-gradient(180deg, #FFF5F3 0%, #FFFFFF 100%)'}}
 			>
 				<Logo/>
@@ -37,5 +36,3 @@ const Intro = props => {
 		</Flex>
 		)
 }
-
-export default Intro

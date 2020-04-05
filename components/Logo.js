@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex, Text, Link } from './system'
 import { Base, TopRight, RightBottom, BottomLeft, TopLeft } from './LogoEls'
 
-const Logo = props => {
+export default function Logo(props) {
 	return (
 
 <Link href='/'>
@@ -66,5 +66,3 @@ const Logo = props => {
 </Link>
 		)
 }
-
-export default Logo
