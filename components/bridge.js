@@ -11,7 +11,7 @@ import How from './How'
 import Mission from './Mission'
 import Partners from './Partners'
 import Footer from './Footer'
-import Copy from './Copy'
+import Copy, {links} from './Copy'
 
 export {
 	Layout,
@@ -27,4 +27,5 @@ export {
 	Partners,
 	Footer,
 	Copy,
+	links,
 }

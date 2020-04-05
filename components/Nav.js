@@ -1,12 +1,15 @@
+import React from 'react'
 import { Flex, Text, Link } from './system'
+import {links} from './bridge'
 
 const Button = props =>
 	<Link
 		p={{all: 1, sm: 2}}
 		mr={2}
-		bg='white'
+		bg='rgba(255,255,255,.96)'
 		variant='desc'
 		flexes='rcc'
+		target='_blank'
 		sx={{
 			display: 'flex',
 			outline: '1px dashed',
@@ -36,7 +39,7 @@ export default function Nav() {
 				zIndex: 3,
 				}}
 		>
-			<Button>
+			<Button href='https://fb.com'>
 				<svg
 					width="24"
 					height="24"
@@ -52,7 +55,7 @@ export default function Nav() {
 				</svg>
 				<Text as='span' pl={1}>Join group</Text>
 			</Button>
-			<Button>Get updates</Button>
+			<Button href={links.subscribe.href}>{links.subscribe.name}</Button>
 		</Flex>
 		)
 }

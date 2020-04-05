@@ -15,7 +15,7 @@ export default function Partners(props) {
 				<Text
 					gridColumn={{ all: '1/-1', sm: '1/7' }}
 					variant='body'
-					pb={{ all: 2, sm: 0 }}
+					pb={{ all: 4, sm: 0 }}
 				>
 					{Copy.partners.desc}
 				</Text>

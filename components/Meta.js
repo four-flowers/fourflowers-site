@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-export const Meta = () => {
+export default function Meta() {
 	return (
 		<Head>
 			<meta charSet='utf-8' />

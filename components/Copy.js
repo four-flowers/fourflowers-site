@@ -1,4 +1,4 @@
-const links = {
+export const links = {
 	mission: {
 		name: 'Mission',
 		href: '/mission',
@@ -27,8 +27,8 @@ export default {
 	},
 	for: {
 		heading: '',
-		'p1': 'This is a school for children practicing self-directed education, as well as for those who wants to complement the main program.',
-		'p2': 'If you create a curriculum yourself, this site will help you to meet, chat and share your education program with others, or join a program of your interest.',
+		'p1': 'Four Flowers School is for parents and children practicing self-directed education, as well as for those looking to complement their regular schooling.',
+		'p2': 'By joining Four Flowers School, you will be able to meet, discuss, and share your education program with others, or simply join a program of your interest.',
 	},
 	course: {
 		heading: 'Creating a course is simple',
@@ -38,7 +38,7 @@ export default {
 				desc: 'Offer a course idea and describe what you want to learn.',
 			},
 			{
-				heading: 'Teacher',
+				heading: 'Facilitator',
 				desc: 'Find a teacher who can facilitate/mentor you.',
 			},
 			{
@@ -51,25 +51,25 @@ export default {
 		heading: 'How it works',
 		items: [
 			{id: 'a', desc: 'Create a topic for the course.'},
-			{id: 'b', desc: 'Invite a teacher who wants to make a course with you.'},
-			{id: 'c', desc: 'Describe with a teacher what the course will be about.'},
-			{id: 'd', desc: 'Define stages, time, and seminars together with a teacher.'},
+			{id: 'b', desc: 'Invite a facilitator who wants to make a course with you.'},
+			{id: 'c', desc: 'Discuss with a facilitator what the course will be about.'},
+			{id: 'd', desc: 'Define stages, time, and seminars together with a facilitator.'},
 			{id: 'e', desc: 'Invite everyone interested.'},
 			{id: 'f', desc: 'Start the course.'},
 		],
 	},
 	mission: {
 		heading: 'Mission',
-		p1: 'In Four Flowers School you decide what subjects to study and in which order, what your learning style and comfortable pace are. This is a place where we trust your choice.',
+		p1: 'At Four Flowers School, you decide which learning style and pace are comfortable for you, as well as what subjects to study and in which order. This is a place where we trust your choice.',
 		p2: 'We believe that giving children freedom of knowledge is the best and most effective way of learning.'
 	},
 	partners: {
 		heading: 'Partners',
-		desc: 'Join our community on Facebook and help create a free learning environment for children. The project is nonprofit, based on a personal desire of everyone to bring something to the world and share with the young generation what you know and can do.',
+		desc: 'Join our community on Facebook and help create a free learning environment for children. The project is a nonprofit initiative, based on everyone’s desire to share what you know and can do with the young generation.',
 	},
 	footer: {
 		desc: 'The platform is currently under development: you can be the first to test the platform by signing up for updates.',
-		copyright: 'Freemia School · 2019',
+		copyright: 'Four Flowers School · 2020',
 		link: {
 			name: links.subscribe.name,
 			href: links.subscribe.name,
