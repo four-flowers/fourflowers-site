@@ -27,7 +27,7 @@ export default function Intro(props) {
 					variant='heading'
 					pt='3'
 				>
-					Four Flowers School <br/>Family Education
+					Four Flowers School <br/>Self-Directed Learning
 				</Text>
 			</Flex>
 

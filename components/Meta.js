@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
-const description = 'A personalised learning resource for self-directed learners.'
-const name = 'Four Flowers School · Family Education'
+const description = 'A learning resource for self-directed learners.'
+const name = 'Four Flowers School · Self-Directed Learning'
 const keywords = 'education, unschooling, free-schooling, school'
 const url = 'https://fourflowers.school'
 
@@ -23,7 +23,7 @@ export default function Meta() {
 			<meta property="og:url" content={url} />
 			<meta property="og:type" content="website" />
 		  <link rel="icon" href="/fav.png" />
-		  <title>Four Flowers School · Family Education</title>
+		  <title>{name}</title>
 		</Head>
 	)
 }

@@ -13,14 +13,12 @@ const Button = props =>
 		sx={{
 			display: 'flex',
 			outline: '1px dashed',
-			outlineColor: 'border',
+			outlineColor: 'blacks.2',
 			':hover': {
 				bg: 'orange',
 				color: 'white',
 			},
-			':last-child': {
-				mr: 0,
-			}
+			':last-child': { mr: 0 }
 		}}
 		{...props}
 	/>

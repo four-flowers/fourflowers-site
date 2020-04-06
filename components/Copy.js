@@ -31,7 +31,7 @@ export default {
 		'p2': 'By joining Four Flowers School, you will be able to meet, discuss, and share your education program with others, or simply join a program of your interest.',
 	},
 	course: {
-		heading: 'Creating a course is simple:',
+		heading: 'Creating a course is simple',
 		pictograms: [
 			{
 				heading: 'Idea',
@@ -39,16 +39,16 @@ export default {
 			},
 			{
 				heading: 'Facilitator',
-				desc: 'Find a teacher who can facilitate/mentor you.',
+				desc: 'Find someone who can facilitate or mentor you.',
 			},
 			{
 				heading: 'Peers',
-				desc: 'Invite others to learn together!',
+				desc: 'Invite others to start learning together!',
 			},
 		],
 	},
 	how: {
-		heading: 'How it works:',
+		heading: 'How it works',
 		items: [
 			{id: 'a', desc: 'Create a topic for the course.'},
 			{id: 'b', desc: 'Invite a facilitator who wants to make a course with you.'},
@@ -69,7 +69,9 @@ export default {
 	},
 	footer: {
 		desc: 'The platform is currently under development: you can be the first to test the platform by signing up for updates.',
-		copyright: 'Four Flowers School · 2020',
+		copyright: 'Four Flowers School',
+		year: '2020',
+		location: 'Los Angeles, CA',
 		link: {
 			name: links.subscribe.name,
 			href: links.subscribe.name,

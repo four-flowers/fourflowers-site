@@ -33,7 +33,8 @@ export default function Footer(props) {
 					borderColor: 'border',
 				}}
 			>
-				<Text variant='desc'>{Copy.footer.copyright}</Text>
+				<Text variant='desc'>{Copy.footer.copyright} · {Copy.footer.year}</Text>
+				<Text variant='desc'>{Copy.footer.location}</Text>
 			</Flex>
 		</Layout>
 	)
