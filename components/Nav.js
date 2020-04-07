@@ -4,24 +4,28 @@ import {links} from './bridge'
 
 const Button = props =>
 	<Link
+		as={props.element}
 		p={{all: 1, sm: 2}}
 		mr={2}
 		bg='rgba(255,255,255,.96)'
 		variant='desc'
 		flexes='rcc'
-		target='_blank'
 		sx={{
 			display: 'flex',
 			outline: '1px dashed',
 			outlineColor: 'blacks.2',
 			':hover': {
-				bg: 'orange',
-				color: 'white',
+				bg: `${props.element === 'div' ? 'white' : 'orange'}`,
+				color: `${props.element === 'div' ? 'black' : 'white'}`,
 			},
 			':last-child': { mr: 0 }
 		}}
 		{...props}
 	/>
+
+Button.defaultProps = {
+	element: 'a',
+}
 
 export default function Nav() {
 	return(
@@ -37,7 +41,7 @@ export default function Nav() {
 				zIndex: 3,
 				}}
 		>
-			<Button href='https://fb.com'>
+			<Button href={links.subscribe.href}>
 				<svg
 					width="24"
 					height="24"
@@ -51,9 +55,9 @@ export default function Nav() {
 						strokeWidth="2"
 					/>
 				</svg>
-				<Text as='span' pl={1}>Join group</Text>
+				<Text as='span' pl={2}>{links.subscribe.name}</Text>
 			</Button>
-			<Button href={links.subscribe.href}>{links.subscribe.name}</Button>
+			{/* <Button element='div'>Launching this year</Button> */}
 		</Flex>
 		)
 }

@@ -43,7 +43,7 @@ export default function Partners(props) {
 							},
 						}}
 					>
-						<Text as='span'>Join group</Text>
+						<Text as='span'>Write us</Text>
 					</Link>
 				</Layout>
 			</Flex>

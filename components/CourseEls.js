@@ -32,6 +32,6 @@ export const Desc = props =>
 	<Text
 		variant='desc'
 		pt={{ all: 5, sm: 6 }}
-		textAlign={{ all: 'center', sm: 'left' }}
+		textAlign='center'
 		{...props}
 	/>

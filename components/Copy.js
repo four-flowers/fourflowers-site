@@ -9,7 +9,7 @@ export const links = {
 	},
 	subscribe: {
 		name: 'Get updates',
-		href: 'http://eepurl.com/gOnRAz',
+		href: 'https://mailchi.mp/15ab20c348d3/fourflowersschool',
 	},
 	twitter: {
 		name: 'Twitter',
@@ -65,7 +65,7 @@ export default {
 	},
 	partners: {
 		heading: 'Partners',
-		desc: 'Join our community on Facebook and help create a free learning environment for children. The project is a nonprofit initiative, based on everyone’s desire to share what you know and can do with the young generation.',
+		desc: 'Join our community and help create a free learning environment for children. The project is a non-profit initiative, based on everyone’s desire to share what you know and can do with the young generation.',
 	},
 	footer: {
 		desc: 'The platform is currently under development: you can be the first to test the platform by signing up for updates.',
@@ -74,7 +74,7 @@ export default {
 		location: 'Los Angeles, CA',
 		link: {
 			name: links.subscribe.name,
-			href: links.subscribe.name,
+			href: links.subscribe.href,
 		}
 	},
 }

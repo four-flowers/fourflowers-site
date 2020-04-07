@@ -13,7 +13,7 @@ export default function How(props) {
 			color='blue'
 		>
 			<Heading color='#0F72B9'>{Copy.how.heading}</Heading>
-			<Layout py={6}>
+			<Layout py={{all: 0, sm: 6}}>
 				{Copy.how.items.map(item => (
 					<Row key={item.id} id={item.id} desc={item.desc} />
 				))}
